@@ -1,0 +1,5661 @@
+/*!
+ * ress.css • v2.0.4
+ * MIT License
+ * github.com/filipelinhares/ress
+ */
+
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    word-break: normal;
+    -moz-tab-size: 4;
+    tab-size: 4
+}
+
+*,
+:after,
+:before {
+    background-repeat: no-repeat;
+    box-sizing: inherit
+}
+
+:after,
+:before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+hr {
+    overflow: visible;
+    height: 0
+}
+
+details,
+main {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+small {
+    font-size: 80%
+}
+
+[hidden] {
+    display: none
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace
+}
+
+pre {
+    font-size: 1em
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+input {
+    border-radius: 0
+}
+
+[disabled] {
+    cursor: default
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit
+}
+
+optgroup {
+    font-weight: 700
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[role=button],
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    cursor: pointer;
+    color: inherit
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button
+}
+
+button,
+input,
+select,
+textarea {
+    background-color: transparent;
+    border-style: none
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+
+select::-ms-expand {
+    display: none
+}
+
+select::-ms-value {
+    color: currentColor
+}
+
+legend {
+    border: 0;
+    color: inherit;
+    display: table;
+    white-space: normal;
+    max-width: 100%
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    color: inherit;
+    font: inherit
+}
+
+img {
+    border-style: none
+}
+
+progress {
+    vertical-align: baseline
+}
+
+svg:not([fill]) {
+    fill: currentColor
+}
+
+@media screen {
+    [hidden~=screen] {
+        display: inherit
+    }
+    [hidden~=screen]:not(:active):not(:focus):not(:target) {
+        position: absolute!important;
+        clip: rect(0 0 0 0)!important
+    }
+}
+
+[aria-busy=true] {
+    cursor: progress
+}
+
+[aria-controls] {
+    cursor: pointer
+}
+
+[aria-disabled] {
+    cursor: default
+}
+
+.Button,
+.MediaCard,
+.Medias__CategoryUnit,
+.ProjectCard,
+.Recruit__JobBannerLink,
+.StaffDetail__Overview,
+.Top__ContactForm,
+.Top__ContactForm .mwFormElm,
+.Top__ContactForm .mwFormTextArea,
+.Top__ContactSubmit .mwFormSend,
+.Top__RecruitImage img,
+.Top__MissionPointItem {
+    border-radius: 5px
+}
+
+.BottomBanner,
+.BottomBanner__Link,
+.Breadcrumb,
+.Button,
+.Footer__Bottom,
+.Footer__Head,
+.Footer__List,
+.Footer__Sns,
+.Footer__SnsList,
+.Header,
+.Header__List,
+.LowerHead,
+.LowerHead__Heading,
+.LowerHeading,
+.MediaCard__Body,
+.MediaCard__CategoryList,
+.MediaCard__StaffList,
+.Medias__CategoryList,
+.Medias__CategoryUnit,
+.Medias__Collection,
+.Mission__RecruitButton,
+.PageNotFound__Button,
+.PageNotFound__HeadingWrap,
+.Pagination,
+.Pagination__Unit,
+.PostProjectCollection,
+.ProjectCard__Body,
+.ProjectCard__CategoryList,
+.Recruit__JobBanner,
+.Recruit__MessageButton,
+.Single__Button,
+.Single__Category,
+.Single__StaffList,
+.StaffDetail__MediasCollection,
+.StaffDetail__Overview,
+.StaffDetail__OverviewVisual,
+.StaffDetail__Sns,
+.StaffDetail__SnsList,
+.Thanks__Button,
+.Thanks__HeadingWrap,
+.Top__AboutDefItem,
+.Top__AboutUnit,
+.Top__ContactSubmit,
+.Top__ContactSubmit .mwFormSend,
+.Top__RecruitUnit,
+.Top__MissionPointHeading,
+.Top__MissionPointImage,
+.Top__MissionPointList,
+.Top__MediaButton,
+.Top__MediaCollection,
+.Top__Mv,
+.Top__MvText,
+.Top__NewsCardAnchor,
+.Top__ServiceButton,
+.Top__ServiceCollection,
+.Top__ServiceMeta {
+    display: flex
+}
+
+.Footer__Bottom,
+.Footer__Head,
+.Header,
+.MediaCard__Body,
+.Medias__Collection,
+.PostProjectCollection,
+.ProjectCard__Body,
+.Recruit__JobBanner,
+.StaffDetail__MediasCollection,
+.Top__AboutUnit,
+.Top__RecruitUnit,
+.Top__MediaCollection,
+.Top__ServiceCollection,
+.Top__ServiceMeta {
+    justify-content: space-between
+}
+
+.BottomBanner__Link,
+.Button,
+.Mission__RecruitButton,
+.PageNotFound__Button,
+.PageNotFound__HeadingWrap,
+.Pagination,
+.Single__Button,
+.StaffDetail__Overview,
+.StaffDetail__OverviewVisual,
+.Thanks__Button,
+.Thanks__HeadingWrap,
+.Top__ContactSubmit,
+.Top__ContactSubmit .mwFormSend,
+.Top__MissionPointImage,
+.Top__MediaButton,
+.Top__ServiceButton {
+    justify-content: center
+}
+
+.Breadcrumb,
+.LowerHead,
+.StaffDetail__Sns {
+    justify-content: flex-end
+}
+
+.Recruit__MessageButton {
+    justify-content: flex-start;
+    margin-top: 5.555555555555555vw
+}
+
+.LowerHead,
+.LowerHeading,
+.Medias__CategoryUnit,
+.Recruit__MessageButton,
+.Single__Category,
+.Single__StaffList,
+.Top__AboutDefItem,
+.Top__Heading,
+.Top__NewsCardAnchor {
+    align-items: flex-start
+}
+
+.LowerHead__Heading {
+    position: relative;
+    align-items: baseline;
+    color: basicBalck;
+    letter-spacing: .05em
+}
+
+.BottomBanner,
+.BottomBanner__Link,
+.Breadcrumb,
+.Button,
+.Footer__Bottom,
+.Footer__Head,
+.Footer__List,
+.Footer__Sns,
+.Footer__SnsList,
+.Header,
+.Header__List,
+.MediaCard__CategoryList,
+.MediaCard__StaffList,
+.Mission__RecruitButton,
+.PageNotFound__Button,
+.PageNotFound__HeadingWrap,
+.Pagination,
+.Pagination__Unit,
+.ProjectCard__CategoryList,
+.Recruit__JobBanner,
+.Single__Button,
+.StaffDetail__Overview,
+.StaffDetail__OverviewVisual,
+.StaffDetail__Sns,
+.StaffDetail__SnsList,
+.Thanks__Button,
+.Thanks__HeadingWrap,
+.Top__ContactSubmit,
+.Top__ContactSubmit .mwFormSend,
+.Top__MissionPointHeading,
+.Top__MissionPointImage,
+.Top__MediaButton,
+.Top__Mv,
+.Top__MvText,
+.Top__ServiceButton,
+.Top__ServiceMeta {
+    align-items: center
+}
+
+.Medias__Collection,
+.PostProjectCollection,
+.StaffDetail__MediasCollection,
+.Top__MissionPointList,
+.Top__MediaCollection,
+.Top__ServiceCollection {
+    align-items: stretch
+}
+
+.Breadcrumb,
+.LowerHead__Heading,
+.MediaCard__CategoryList,
+.MediaCard__StaffList,
+.Medias__CategoryList,
+.Medias__Collection,
+.PostProjectCollection,
+.ProjectCard__CategoryList,
+.Single__Category,
+.Single__StaffList,
+.StaffDetail__MediasCollection,
+.Top__MediaCollection,
+.Top__ServiceCollection {
+    flex-wrap: wrap
+}
+
+.BottomBanner__Link,
+.LowerHead,
+.LowerHeading,
+.MediaCard__Body,
+.ProjectCard__Body,
+.StaffDetail__OverviewVisual,
+.Top__Heading {
+    flex-direction: column
+}
+
+.Top__ContactForm .mwFormElm:-ms-input-placeholder,
+.Top__ContactForm .mwFormTextArea:-ms-input-placeholder {
+    line-height: 1
+}
+
+.BottomBanner__LinkBody,
+.Breadcrumb>span,
+.Breadcrumb a,
+.Button,
+.Footer__Copyright,
+.Footer__Link,
+.Footer__SnsLabel,
+.Header__Link,
+.LowerHead__Heading,
+.LowerHeading__Body,
+.MediaCard__CategoryItem,
+.MediaCard__Date,
+.Medias__CategoryAll,
+.Medias__CategoryLink,
+.Mission__RecruitHeading,
+.Mission__ValueHeading,
+.PageNotFound__Heading,
+.Pagination__Link,
+.ProjectCard__CategoryItem,
+.Recruit__JobBannerText.-text,
+.Recruit__OfficeSliderMainHeadingBody,
+.Recruit__OfficeSliderThumbText,
+.Single__CategoryLink,
+.Single__StaffJob,
+.Single__StaffName,
+.StaffCard__Job,
+.StaffCard__Name,
+.StaffDetail__Job,
+.StaffDetail__Name,
+.StaffDetail__SnsLabel,
+.Thanks__Heading,
+.Top__ContactAgrmtHeading,
+.Top__ContactForm .Form__Heading,
+.Top__ContactForm .mwFormElm,
+.Top__ContactForm .mwFormElm::placeholder,
+.Top__ContactForm .mwFormTextArea::placeholder,
+.Top__ContactSubmit .mwFormSend,
+.Top__MissionPointHeadingBody,
+.Top__Heading,
+.Top__MvText {
+    line-height: 1
+}
+
+.Single__Heading {
+    margin-bottom: .694444444444444vw;
+    font-size: 2.361111111111111vw;
+    line-height: 1.4
+}
+
+.Top__RecruitInnerHeading {
+    margin-bottom: 1.388888888888889vw;
+    font-size: 1.736111111111111vw;
+    letter-spacing: .03em;
+    line-height: 1.5
+}
+
+.MediaCard__CardDesc,
+.MediaCard__Heading,
+.Mission__Mission1Heading,
+.ProjectCard__CardDesc,
+.ProjectCard__Heading,
+.Recruit__MessageHeading,
+.Single__Content h2,
+.Single__Content h3,
+.Single__Content h4,
+.Single__Content h5,
+.Single__Content h6 {
+    line-height: 1.6
+}
+
+.Top__ContactAgrmtBody,
+.Top__ContactFormText {
+    line-height: 1.7
+}
+
+.Medias__CategoryText,
+.Medias__CategoryText p,
+.Recruit__OfficeSliderMainText,
+.Top__AboutDefBody,
+.Top__AboutDefHeading,
+.Top__MissionPointText,
+.Top__NewsCardDate,
+.Top__NewsCardHeading {
+    line-height: 1.8
+}
+
+.PageNotFound__Text,
+.Recruit__JobText,
+.Thanks__Text {
+    line-height: 1.9
+}
+
+.Mission__ValueText,
+.Single__Content li,
+.Single__Content p,
+.Top__ServiceText {
+    line-height: 2
+}
+
+.Breadcrumb>span,
+.Breadcrumb a,
+.Footer__Copyright,
+.Footer__Link,
+.Footer__SnsLabel,
+.Header__Link,
+.MediaCard__CardDesc,
+.MediaCard__Date,
+.Medias__CategoryText,
+.Medias__CategoryText p,
+.Mission__RecruitText,
+.Mission__ValueText,
+.Mission__Mission1Text,
+.PageNotFound__Text,
+.ProjectCard__CardDesc,
+.Recruit__JobText,
+.Recruit__MessageText,
+.Recruit__OfficeSliderMainText,
+.Single__Content li,
+.Single__Content p,
+.StaffCard__Job,
+.StaffDetail__Comment,
+.StaffDetail__Job,
+.Thanks__Text,
+.Top__AboutDefBody,
+.Top__ContactFormText,
+.Top__RecruitText,
+.Top__MissionPointText,
+.Top__NewsCardDate,
+.Top__NewsCardHeading,
+.Top__ServiceText {
+    font-weight: 400
+}
+
+.BottomBanner__LinkBody.-ja,
+.Breadcrumb>span:not(:last-of-type):after,
+.Button,
+.MediaCard__CategoryItem,
+.MediaCard__Date,
+.MediaCard__Heading,
+.Medias__CategoryAll,
+.Medias__CategoryLink,
+.Pagination__Link,
+.ProjectCard__CategoryItem,
+.ProjectCard__Heading,
+.Single__CategoryLink,
+.Single__StaffJob,
+.Single__StaffName,
+.StaffCard__Name,
+.Top__AboutDefHeading,
+.Top__ContactAgrmtHeading,
+.Top__ContactAgrmtLabel,
+.Top__ContactForm .Form__Heading,
+.Top__ContactFormError,
+.Top__ContactSubmit .mwFormSend {
+    font-weight: 500
+}
+
+.BottomBanner__LinkBody.-en,
+.LowerHead__Heading,
+.LowerHeading__Body,
+.Mission__ValueHeading,
+.Mission__Mission1Heading,
+.PageNotFound__Heading,
+.Recruit__JobBannerText.-text,
+.Recruit__MessageHeading,
+.Recruit__OfficeSliderMainHeadingBody,
+.Recruit__OfficeSliderThumbText,
+.StaffDetail__Name,
+.StaffDetail__SnsLabel,
+.Thanks__Heading,
+.Top__Heading,
+.Top__MvText {
+    font-weight: 700
+}
+
+.Top__MissionPointHeadingBody {
+    padding-bottom: .625vw;
+    border-bottom: solid #222;
+    border-width: .208333333333333vw;
+    font-size: 1.388888888888889vw;
+    font-weight: 800;
+    letter-spacing: .05em
+}
+
+.Br.-pc {
+    display: block
+}
+
+.Br.-sp {
+    display: none
+}
+
+*,
+:after,
+:before {
+    -webkit-backface-visibility: inherit;
+    backface-visibility: inherit
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-display: swap;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: #222;
+    font-feature-settings: "pkna";
+    font-size: .694444444444444vw;
+    font-style: normal;
+    font-weight: 400
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: Noto Sans CJK JP, Noto Sans JP, Noto Sans CJK JP Subset, Helvetica Neue, YuGothic, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif!important
+}
+
+::selection {
+    background-color: #e9b11d;
+    color: #222
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+canvas,
+img,
+svg {
+    display: block
+}
+
+table {
+    border-collapse: collapse
+}
+
+img {
+    object-fit: contain
+}
+
+.related-post,
+main {
+    overflow: hidden
+}
+
+.related-post {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px
+}
+
+.related-entry {
+    display: block;
+    width: 123px;
+    min-height: 210px;
+    margin-bottom: 0;
+    padding: 0 10px;
+    float: left;
+    font-size: 13px;
+    vertical-align: top
+}
+
+.related-entry img {
+    width: 123px;
+    height: 123px;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid #ccc
+}
+
+#post-syokai {
+    margin: 5px 0 16px 5px;
+    padding: 1px 9px;
+    border-left: 10px solid #999;
+    font-size: 18px
+}
+
+.-is-text-hidden {
+    display: inline-block;
+    position: relative;
+    overflow: hidden
+}
+
+.-is-text-single-do {
+    position: relative;
+    transform: translate3d(-100%, 0, 0)
+}
+
+.-is-text-single-do.-active:after {
+    transform: translate3d(101%, 0, 0)
+}
+
+.-is-text-single-do:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    content: "";
+    transition: transform .6s cubic-bezier(.76, 0, .24, 1)
+}
+
+.-is-strip {
+    display: block;
+    overflow: hidden;
+    line-height: 1;
+    opacity: 0
+}
+
+.-is-strip:not(:last-of-type) {
+    margin-bottom: 2.222222222222222vw
+}
+
+.-is-strip-in {
+    display: inline-block;
+    transform: translate3d(1.5vw, 2vw, 0);
+    line-height: 1;
+    opacity: 0;
+    will-change: transform, opacity
+}
+
+.-is-fade,
+.-is-fade-stagger {
+    transform: translate3d(0, 1.5vw, 0);
+    opacity: 0
+}
+
+.BottomBanner {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.BottomBanner__Link {
+    position: relative;
+    width: 50vw;
+    height: 25vw;
+    overflow: hidden;
+    text-align: center
+}
+
+.BottomBanner__Link:not(:last-of-type) {
+    border-right: 1px solid #e6e6e6
+}
+
+.BottomBanner__Link:hover .BottomBanner__LinkBg:after {
+    opacity: 0
+}
+
+.BottomBanner__Link:hover .BottomBanner__LinkBody {
+    color: #fff
+}
+
+.BottomBanner__LinkBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.BottomBanner__LinkBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.BottomBanner__LinkBg:after {
+    background-color: #fff;
+    transition: opacity .255s
+}
+
+.BottomBanner__LinkBg:after,
+.BottomBanner__LinkBg:before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ""
+}
+
+.BottomBanner__LinkBg:before {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.BottomBanner__LinkBody {
+    z-index: 1;
+    position: relative;
+    color: #222;
+    transition: color .255s
+}
+
+.BottomBanner__LinkBody.-en {
+    position: relative;
+    margin-bottom: 1.388888888888889vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 2.430555555555556vw;
+    letter-spacing: .03em;
+    text-transform: uppercase
+}
+
+.BottomBanner__LinkBody.-ja {
+    font-size: .972222222222222vw;
+    letter-spacing: .18em
+}
+
+.Breadcrumb {
+    z-index: 1;
+    position: absolute;
+    top: 24.444444444444443vw;
+    right: 2.777777777777778vw;
+    text-align: right
+}
+
+.Breadcrumb>span {
+    position: relative;
+    color: #777;
+    letter-spacing: .2em;
+    word-break: break-all
+}
+
+.Breadcrumb>span,
+.Breadcrumb>span:not(:last-of-type):after {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .833333333333333vw
+}
+
+.Breadcrumb>span:not(:last-of-type):after {
+    margin-right: .277777777777778vw;
+    margin-left: .277777777777778vw;
+    content: "/"
+}
+
+.Breadcrumb a {
+    color: #777;
+    font-size: .833333333333333vw;
+    letter-spacing: .2em;
+    word-break: break-all
+}
+
+.Breadcrumb a,
+.Button {
+    font-family: brandon-grotesque, sans-serif
+}
+
+.Button {
+    border: 1px solid;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    transition: color .225s, background-color .225s, border-color .225s
+}
+
+.Button.-large {
+    width: 25vw
+}
+
+.Button.-large,
+.Button.-medium {
+    height: 4.861111111111112vw;
+    font-size: 1.25vw
+}
+
+.Button.-medium {
+    width: 20.833333333333336vw
+}
+
+.Button.-black {
+    border-color: #222;
+    background-color: #222;
+    color: #fff
+}
+
+.Button.-black:hover {
+    border-color: #e07c0f;
+    background-color: #e07c0f
+}
+
+.Button.-clear {
+    border-color: #fff;
+    color: #fff
+}
+
+.Button.-clear:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #222
+}
+
+.GotoTop {
+    display: block;
+    position: absolute;
+    top: -6.180555555555555vw;
+    right: 2.777777777777778vw;
+    width: 3.472222222222222vw;
+    height: 3.472222222222222vw;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 45px rgba(199, 199, 199, .2))
+}
+
+.GotoTop:hover .-d {
+    opacity: 0
+}
+
+.GotoTop:hover .-h {
+    opacity: 1
+}
+
+.GotoTop .-h {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0
+}
+
+.GotoTop img {
+    width: 100%;
+    height: 100%;
+    transition: opacity .225s
+}
+
+.LowerHead {
+    position: relative;
+    height: 22.708333333333332vw;
+    padding-bottom: 2.777777777777778vw;
+    padding-left: 8.333333333333332vw;
+    overflow: hidden;
+    background-color: #fff
+}
+
+.LowerHead__StrokeText {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.LowerHead__StrokeText img,
+.LowerHead__StrokeText img[src$=".svg"],
+.LowerHead__StrokeText object,
+.LowerHead__StrokeText object[src$=".svg"],
+.LowerHead__StrokeText svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.LowerHead__StrokeText.-mission {
+    width: 83.75625vw
+}
+
+.LowerHead__StrokeText.-media,
+.LowerHead__StrokeText.-mission {
+    right: -3.472222222222222vw;
+    bottom: -2.083333333333333vw;
+    height: 15vw
+}
+
+.LowerHead__StrokeText.-media {
+    width: 70.3125vw
+}
+
+.LowerHead__StrokeText.-staff {
+    right: -8.333333333333332vw;
+    bottom: -2.777777777777778vw;
+    width: 70.3125vw;
+    height: 15vw
+}
+
+.LowerHead__StrokeText.-project {
+    right: -5.902777777777778vw
+}
+
+.LowerHead__StrokeText.-project,
+.LowerHead__StrokeText.-recruit {
+    bottom: -2.777777777777778vw;
+    width: 85.95833333333333vw;
+    height: 15vw
+}
+
+.LowerHead__StrokeText.-recruit {
+    right: -6.944444444444445vw
+}
+
+.LowerHead__StrokeText.-contact {
+    right: -5.208333333333334vw;
+    bottom: -2.083333333333333vw;
+    width: 93.88888888888889vw;
+    height: 15vw
+}
+
+.LowerHead__StrokeText.-pagenotfound {
+    right: -90.27777777777779vw;
+    bottom: -2.083333333333333vw;
+    width: 176.66666666666666vw;
+    height: 15vw
+}
+
+.LowerHead__Heading .-en {
+    margin-right: 1.041666666666667vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 4.166666666666666vw;
+    text-transform: uppercase
+}
+
+.LowerHead__Heading .-ja {
+    font-size: 1.041666666666667vw
+}
+
+.LowerHeading__Body {
+    display: inline-block;
+    color: #222;
+    letter-spacing: .05em
+}
+
+.LowerHeading__Body .-red {
+    color: #d4234d
+}
+
+.LowerHeading__Body .-orange {
+    color: #e9b11d
+}
+
+.LowerHeading__Body .-white {
+    color: #fff
+}
+
+.LowerHeading__Body.-en,
+.LowerHeading__Body.-tax {
+    font-size: 2.430555555555556vw
+}
+
+.LowerHeading__Body.-en {
+    position: relative;
+    margin-bottom: 2.222222222222222vw;
+    font-family: brandon-grotesque, sans-serif;
+    letter-spacing: .03em;
+    text-transform: uppercase
+}
+
+.LowerHeading__Body.-en:after {
+    position: absolute;
+    bottom: -1.180555555555556vw;
+    left: 0;
+    width: calc(100% + 40px);
+    min-width: 7.777777777777778vw;
+    height: 3px;
+    background-color: #222;
+    content: ""
+}
+
+.LowerHeading__Body.-ja {
+    font-size: .972222222222222vw;
+    letter-spacing: .18em
+}
+
+.MediaCard {
+    width: 25vw;
+    margin-bottom: 2.777777777777778vw;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 25px transparent;
+    transition: box-shadow .225s
+}
+
+.MediaCard:hover {
+    box-shadow: 0 0 25px hsla(0, 0%, 46.7%, .2)
+}
+
+.MediaCard:hover .MediaCard__Thumb img {
+    transform: scale(1.13)
+}
+
+.MediaCard__Anchor {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 34.791666666666664vw;
+    max-height: 34.791666666666664vw;
+    overflow: hidden;
+    background-color: #fff
+}
+
+.MediaCard__Thumb {
+    width: 100%;
+    height: 13.88888888888889vw;
+    overflow: hidden
+}
+
+.MediaCard__Thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .325s
+}
+
+.MediaCard__Body {
+    height: 15.277777777777779vw;
+    padding: 1.388888888888889vw
+}
+
+.MediaCard__Heading {
+    height: 3.055555555555555vw;
+    margin-bottom: 1.041666666666667vw;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .03em
+}
+
+.MediaCard__CardDesc {
+    min-height: 4.166666666666666vw;
+    margin-bottom: 1.388888888888889vw;
+    color: #777;
+    font-size: .902777777777778vw;
+    letter-spacing: .03em
+}
+
+.MediaCard__CategoryItem {
+    margin-bottom: .347222222222222vw;
+    color: #e07c0f;
+    font-size: .763888888888889vw;
+    letter-spacing: .03em
+}
+
+.MediaCard__CategoryItem:not(:last-of-type) {
+    margin-right: .694444444444444vw
+}
+
+.MediaCard__Date {
+    margin-bottom: .555555555555556vw;
+    color: #777;
+    font-size: .833333333333333vw
+}
+
+.MediaCard__StaffList {
+    position: absolute;
+    bottom: 1.388888888888889vw;
+    left: 1.388888888888889vw
+}
+
+.MediaCard__StaffItem {
+    width: 2.777777777777778vw;
+    height: 2.777777777777778vw;
+    overflow: hidden;
+    border: 2px solid #e6e6e6;
+    border-radius: 100px
+}
+
+.MediaCard__StaffItem:not(:first-of-type) {
+    margin-left: -1.388888888888889vw
+}
+
+.MediaCard__StaffItem img {
+    width: 100%;
+    height: 100%
+}
+
+.MenuButton {
+    display: none
+}
+
+.MenuButton__Line {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+    transition: transform .225s
+}
+
+.MenuButton__Line.-active:first-of-type {
+    top: 1.560468140442133vw;
+    transform: rotate(45deg)
+}
+
+.MenuButton__Line.-active:nth-of-type(2) {
+    display: none
+}
+
+.MenuButton__Line.-active:nth-of-type(3) {
+    top: 1.560468140442133vw;
+    transform: rotate(-45deg)
+}
+
+.MenuButton__Line:first-of-type {
+    top: 0
+}
+
+.MenuButton__Line:nth-of-type(2) {
+    top: 1.560468140442133vw
+}
+
+.MenuButton__Line:nth-of-type(3) {
+    top: 3.120936280884266vw
+}
+
+.Pagination__Unit {
+    position: relative
+}
+
+.Pagination__Link {
+    color: #222;
+    font-size: 1.388888888888889vw
+}
+
+.Pagination__Link.-active {
+    color: #e07c0f
+}
+
+.Pagination__PageItem:not(:last-of-type) {
+    margin-right: 2.777777777777778vw
+}
+
+.Pagination__Button {
+    display: block;
+    width: .694444444444444vw;
+    height: .694444444444444vw;
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222
+}
+
+.Pagination__Button span {
+    visibility: hidden;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    pointer-events: none
+}
+
+.Pagination__Item {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    transform-origin: top
+}
+
+.Pagination__Item.-next {
+    right: -.694444444444444vw;
+    transform: rotate(-45deg) translateY(-50%)
+}
+
+.Pagination__Item.-prev {
+    left: -3.819444444444445vw;
+    transform: rotate(135deg) translateY(-50%)
+}
+
+.ProjectCard {
+    width: 25vw;
+    margin-bottom: 2.777777777777778vw;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    box-shadow: 0 0 25px transparent;
+    transition: box-shadow .225s
+}
+
+.ProjectCard:hover {
+    box-shadow: 0 0 25px hsla(0, 0%, 46.7%, .2)
+}
+
+.ProjectCard:hover .ProjectCard__Thumb img {
+    transform: scale(1.13)
+}
+
+.ProjectCard__Anchor {
+    display: block;
+    width: 100%;
+    height: 29.166666666666668vw;
+    max-height: 34.791666666666664vw;
+    overflow: hidden;
+    background-color: #fff
+}
+
+.ProjectCard__Thumb {
+    width: 100%;
+    height: 13.88888888888889vw;
+    overflow: hidden
+}
+
+.ProjectCard__Thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .325s
+}
+
+.ProjectCard__Body {
+    height: 15.277777777777779vw;
+    padding: 1.388888888888889vw
+}
+
+.ProjectCard__Heading {
+    height: 3.055555555555555vw;
+    margin-bottom: 1.041666666666667vw;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .03em
+}
+
+.ProjectCard__CardDesc {
+    min-height: 4.166666666666666vw;
+    margin-bottom: 1.388888888888889vw;
+    color: #777;
+    font-size: .902777777777778vw;
+    letter-spacing: .03em
+}
+
+.ProjectCard__CategoryItem {
+    margin-bottom: .694444444444444vw;
+    color: #e07c0f;
+    font-size: .763888888888889vw;
+    letter-spacing: .03em
+}
+
+.ProjectCard__CategoryItem:not(:last-of-type) {
+    margin-right: .694444444444444vw
+}
+
+.StaffCard {
+    width: 17.01388888888889vw;
+    margin-right: 1.388888888888889vw;
+    margin-bottom: 5.555555555555555vw;
+    float: left;
+    text-align: center
+}
+
+.StaffCard__Image {
+    width: 17.01388888888889vw;
+    height: 17.01388888888889vw;
+    overflow: hidden;
+    border-radius: 5px
+}
+
+.StaffCard__Image:hover img {
+    transform: scale(1.13)
+}
+
+.StaffCard__Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .325s
+}
+
+.StaffCard__Name {
+    margin-top: 1.388888888888889vw;
+    font-size: 1.25vw
+}
+
+.StaffCard__Job {
+    margin-top: .555555555555556vw;
+    color: #777;
+    font-size: .902777777777778vw
+}
+
+.PageNotFound__Container {
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 9.027777777777777vw
+}
+
+.PageNotFound__Heading {
+    display: inline-block;
+    padding-bottom: 1.041666666666667vw;
+    border-bottom: 3px solid #222;
+    font-size: 1.736111111111111vw
+}
+
+.PageNotFound__Heading,
+.PageNotFound__Text {
+    margin-bottom: 2.777777777777778vw;
+    text-align: center
+}
+
+.PageNotFound__Text {
+    font-size: 1.111111111111111vw
+}
+
+.Footer {
+    position: relative;
+    padding: 5.555555555555555vw 2.777777777777778vw 8.333333333333332vw 5.555555555555555vw;
+    background-color: #fff
+}
+
+.Footer__Head {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Footer__Logo {
+    display: block;
+    width: 11.114583333333334vw;
+    height: 3.125vw
+}
+
+.Footer__Logo img {
+    width: 100%;
+    height: 100%
+}
+
+.Footer__Item:not(:last-of-type) {
+    margin-right: 2.083333333333333vw
+}
+
+.Footer__Link {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .972222222222222vw;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    transition: color .225s
+}
+
+.Footer__Link.-active,
+.Footer__Link:hover {
+    color: #e07c0f
+}
+
+.Footer__SnsLabel {
+    margin-right: 1.388888888888889vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .694444444444444vw;
+    letter-spacing: .1em;
+    text-transform: uppercase
+}
+
+.Footer__SnsItem:not(:last-of-type) {
+    margin-right: .694444444444444vw
+}
+
+.Footer__SnsLink {
+    display: block;
+    position: relative;
+    width: 2.777777777777778vw;
+    height: 2.777777777777778vw
+}
+
+.Footer__SnsLink:hover .-d {
+    opacity: 0
+}
+
+.Footer__SnsLink:hover .-h {
+    opacity: 1
+}
+
+.Footer__SnsLink .-h {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0
+}
+
+.Footer__SnsLink img {
+    width: 100%;
+    height: 100%;
+    transition: opacity .225s
+}
+
+.Footer__Copyright {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .833333333333333vw;
+    letter-spacing: .1em
+}
+
+.Header {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2.777777777777778vw;
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw;
+    transition: padding .225s, background-color .225s
+}
+
+.Header.-scrolled {
+    padding-top: 1.388888888888889vw;
+    padding-bottom: 1.388888888888889vw;
+    background-color: #fff
+}
+
+.Header__Logo {
+    display: block;
+    z-index: 1;
+    position: relative;
+    width: 11.11111111111111vw;
+    height: 3.125vw
+}
+
+.Header__Logo img {
+    width: 100%;
+    height: 100%
+}
+
+.Header__Nav.-active {
+    transition: opacity .225s
+}
+
+.Header__Item:not(:last-of-type) {
+    margin-right: 2.083333333333333vw
+}
+
+.Header__Link {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .972222222222222vw;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    transition: color .225s
+}
+
+.Header__Link.-active,
+.Header__Link:hover {
+    color: #e07c0f
+}
+
+.Medias__Conatiner {
+    position: relative;
+    padding: 5.555555555555555vw 8.333333333333332vw 9.027777777777777vw
+}
+
+.Medias__Body {
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Mission__LowerHeading {
+    margin-top: 4.166666666666666vw
+}
+
+.Medias__Category {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Medias__CategoryText,
+.Medias__CategoryText p {
+    margin-top: 1.666666666666667vw;
+    font-size: 1.111111111111111vw;
+    word-break: break-all
+}
+
+.Medias__CategoryText.-all,
+.Medias__CategoryText p.-all {
+    margin-top: 2.222222222222222vw
+}
+
+.Medias__CategoryUnit {
+    padding: 2.777777777777778vw 2.777777777777778vw 1.388888888888889vw;
+    background-color: #fff
+}
+
+.Medias__CategoryAllWrap {
+    width: 2.222222222222222vw;
+    margin-right: 2.222222222222222vw
+}
+
+.Medias__CategoryList {
+    flex: 1
+}
+
+.Medias__CategoryItem {
+    margin-right: 1.388888888888889vw;
+    margin-bottom: 1.388888888888889vw
+}
+
+.Medias__CategoryAll,
+.Medias__CategoryLink {
+    color: #e07c0f;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .03em;
+    transition: opacity .225s
+}
+
+.Medias__CategoryAll:hover,
+.Medias__CategoryLink:hover {
+    opacity: .5
+}
+
+.Medias__CategoryAll {
+    color: #222
+}
+
+.Medias__Collection {
+    position: relative;
+    margin-bottom: 4.166666666666666vw
+}
+
+.Medias__Collection:after {
+    display: block;
+    width: 25vw;
+    content: ""
+}
+
+.Mission {
+    overflow: hidden
+}
+
+.Mission__Container {
+    position: relative;
+    padding-right: 8.333333333333332vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Mission__Mission1 {
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 8.333333333333332vw
+}
+
+.Mission__Mission1Body {
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Mission__Mission1LowerHeading {
+    margin-bottom: 2.430555555555556vw
+}
+
+.Mission__Mission1Heading {
+    margin-bottom: 1.736111111111111vw;
+    font-size: 2.430555555555556vw;
+    letter-spacing: .05em
+}
+
+.Mission__Mission1Text {
+    max-width: 61.111111111111114vw;
+    font-size: 1.111111111111111vw;
+    letter-spacing: .03em;
+    line-height: 2.4
+}
+
+.Mission__Value {
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 8.333333333333332vw;
+    background-color: #fff
+}
+
+.Mission__ValueLowerHeading {
+    margin-bottom: 4.166666666666666vw
+}
+
+.Mission__ValueBody {
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Mission__ValueItem:not(:last-of-type) {
+    margin-bottom: 3.888888888888889vw
+}
+
+.Mission__ValueHeadungUnit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.Mission__ValueNum {
+    display: block;
+    width: 3.125vw;
+    height: 3.125vw;
+    margin-right: .520156046814044vw;
+    margin-bottom: 1.111111111111111vw
+}
+
+.Mission__ValueNum img,
+.Mission__ValueNum img[src$=".svg"],
+.Mission__ValueNum object,
+.Mission__ValueNum object[src$=".svg"],
+.Mission__ValueNum svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.Mission__ValueHeading {
+    margin-bottom: .833333333333333vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 2.222222222222222vw;
+    letter-spacing: .1em;
+    text-transform: uppercase
+}
+
+.Mission__ValueText {
+    color: #777;
+    font-size: 1.111111111111111vw;
+    letter-spacing: .06em
+}
+
+.Mission__Recruit {
+    position: relative;
+    width: 100%;
+    height: 49.236111111111114vw;
+    padding-top: 8.333333333333332vw;
+    padding-bottom: 8.333333333333332vw
+}
+
+.Mission__RecruitBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.Mission__RecruitBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.Mission__RecruitBg:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, .8);
+    content: ""
+}
+
+.Mission__RecruitLowerHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Mission__RecruitLowerHeading .LowerHeading__Body {
+    color: #fff
+}
+
+.Mission__RecruitLowerHeading .LowerHeading__Body.-en:after {
+    background-color: #fff
+}
+
+.Mission__RecruitHeading {
+    margin-bottom: 2.777777777777778vw;
+    color: #fff;
+    font-size: 2.083333333333333vw;
+    letter-spacing: .03em;
+    text-align: center
+}
+
+.Mission__RecruitText {
+    max-width: 61.111111111111114vw;
+    margin: 0 auto 2.777777777777778vw;
+    color: #fff;
+    font-size: 1.111111111111111vw;
+    letter-spacing: .03em;
+    line-height: 2.4
+}
+
+.Recruit__Container {
+    position: relative;
+    padding-right: 8.333333333333332vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Recruit__Message {
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 5.555555555555555vw
+}
+
+.Recruit__MessageBody {
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Recruit__MessageLowerHeading {
+    margin-bottom: 2.430555555555556vw
+}
+
+.Recruit__MessageHeading {
+    margin-bottom: 1.736111111111111vw;
+    font-size: 2.430555555555556vw;
+    letter-spacing: .05em
+}
+
+.Recruit__MessageText {
+    max-width: 61.111111111111114vw;
+    font-size: 1.111111111111111vw;
+    letter-spacing: .03em;
+    line-height: 2.4
+}
+
+.Recruit__About {
+    margin-bottom: 8.333333333333332vw;
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 6.944444444444445vw;
+    background-color: #fff
+}
+
+.Recruit__AboutLowerHeading {
+    margin-bottom: 3.611111111111111vw
+}
+
+.Recruit__AboutSlide {
+    width: 72.22222222222221vw;
+    height: 41.31944444444444vw;
+    margin: 0 auto;
+    box-shadow: 10px 10px 36px rgba(0, 0, 0, .16)
+}
+
+.Recruit__AboutSlide iframe {
+    width: 100%;
+    height: 100%
+}
+
+.Recruit__OfficeSlider {
+    max-width: 77.77777777777779vw;
+    margin-top: 2.777777777777778vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 8.333333333333332vw;
+    overflow: hidden
+}
+
+.Recruit__OfficeSlider .swiper-container {
+    width: 100%
+}
+
+.Recruit__OfficeSliderMain {
+    margin-bottom: 6.25vw
+}
+
+.Recruit__OfficeSliderMain .swiper-container {
+    overflow: visible
+}
+
+.Recruit__OfficeSliderMain .swiper-container .swiper-slide {
+    display: flex;
+    align-items: flex-start
+}
+
+.Recruit__OfficeSliderThumb,
+.Recruit__OfficeSliderThumb .swiperw-container {
+    padding-right: 5.555555555555555vw;
+    padding-left: 5.555555555555555vw
+}
+
+.Recruit__OfficeSliderThumb .swiperw-container {
+    position: relative
+}
+
+.Recruit__OfficeSliderThumb .swiperw-container .swiper-slide {
+    position: relative;
+    width: .972222222222222vw;
+    height: 5.555555555555555vw;
+    overflow: hidden;
+    box-shadow: 10px 10px 36px rgba(0, 0, 0, .16);
+    cursor: pointer;
+    opacity: .5
+}
+
+.Recruit__OfficeSliderThumb .swiperw-container .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1
+}
+
+.Recruit__OfficeSliderMainImage {
+    z-index: 1;
+    position: relative;
+    width: 45.34722222222222vw;
+    height: 26.944444444444443vw;
+    background-color: #777
+}
+
+.Recruit__OfficeSliderMainImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.Recruit__OfficeSliderMainBody {
+    position: absolute;
+    top: 2.777777777777778vw;
+    right: 0;
+    width: 37.01388888888889vw;
+    min-height: 26.944444444444443vw;
+    padding-top: 2.777777777777778vw;
+    padding-right: 2.777777777777778vw;
+    padding-left: 7.361111111111112vw;
+    background-color: #fff
+}
+
+.Recruit__OfficeSliderMainHeadingBody {
+    display: block
+}
+
+.Recruit__OfficeSliderMainHeadingBody.-en {
+    position: relative;
+    margin-bottom: 1.666666666666667vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 2.083333333333333vw;
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+
+.Recruit__OfficeSliderMainHeadingBody.-en:after {
+    position: absolute;
+    bottom: -.694444444444444vw;
+    left: 0;
+    width: 4.861111111111112vw;
+    height: 4px;
+    background-color: #222;
+    content: ""
+}
+
+.Recruit__OfficeSliderMainHeadingBody.-ja {
+    font-size: .902777777777778vw;
+    letter-spacing: .03em
+}
+
+.Recruit__OfficeSliderMainText {
+    margin-top: 2.5vw;
+    color: #777;
+    font-size: .972222222222222vw
+}
+
+.Recruit__OfficeSliderThumbImage {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #777
+}
+
+.Recruit__OfficeSliderThumbImage:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, .6);
+    content: ""
+}
+
+.Recruit__OfficeSliderThumbImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.Recruit__OfficeSliderThumbButton {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%)
+}
+
+.Recruit__OfficeSliderThumbButton .swiper-button-next {
+    width: 2.777777777777778vw;
+    height: 2.777777777777778vw;
+    outline: none;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAAClFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAkJCQgICAcHBwaGhoVFRUiIiIgICAeHh4cHBwaGhoYGBgjIyMhISEgICAfHx8dHR0bGxsaGhohISEfHx8eHh4iIiIiIiIhISEgICAfHx8eHh4eHh4dHR0iIiIgICAeHh4iIiIiIiIhISEgICAeHh4iIiIhISEgICAgICAfHx8hISEgICAfHx8iIiIhISEhISEgICAfHx8iIiIhISEgICAiIiIhISEgICAiIiIiIiIhISEhISEhISEhISEgICAgICAiIiIhISEhISEgICAiIiIiIiIiIiIhISEgICAgICAiIiIiIiIhISEhISEhISEhISEgICAiIiIiIiIhISEhISEhISEiIiIhISEhISEiIiIiIiIhISEiIiIiIiIiIiIgICAiIiIhISEhISEhISEiIiIiIiIhISEhISEhISEhISEhISEiIiIiIiIhISEhISEiIiIiIiIiIiIhISEhISEhISEiIiIiIiIhISEhISEhISEiIiIiIiIhISEhISEhISEhISEhISEiIiIiIiIiIiIhISEhISEiIiIiIiIhISEhISEhISEiIiIiIiIiIiIiIiIhISEhISEhISEhISEiIiIiIiIhISEhISEhISEhISEiIiIiIiIiIiIiIiIhISEhISEhISEhISEiIiIiIiIiIiIiIiIhISEhISEhISEiIiImJiYnJycqKio0NDQ1NTU7OztAQEBKSkpMTExPT09QUFBRUVFSUlJcXFxiYmJjY2NxcXFycnJ0dHSFhYWHh4ePj4+QkJCRkZGSkpKXl5eZmZmrq6usrKywsLCxsbG+vr7Pz8/Q0NDR0dHW1tbg4ODq6urr6+vs7Ozz8/P29vb6+vr7+/v///9KEqjsAAAArnRSTlMAAQMEBQYHCAkKDA8QERIUFRYXGBkaHB0fISIlJicoKSorLC0wMzQ1Njg7PD4/QEFGSElLTU5QUVNUWFtdYGFiY2RlZmdoamxtb3BxcnN2d3h5ent8fX6AgYKDhYiLjY+QlZaXmJ2eoKOkpqeoqaqrrK6vsLK0tba3uLm8vr/AwcPFx8jJytDS09XX2Nvc3d/g4eLj5OXm5+jq6+zt7u/w8fLz9PX29/j5+vv8/f6raNp7AAAF4klEQVR42tWd7VtURRiHn4WQQqTWDLBCiEjCEEXMirKk0pKy0EpKqVAxAtGyzRIsMIxU1sqgbJNcAmGJXXgsSyuzwixKs6LCjOaf6cMmLOzbOTPzzBnu72ev+7p+M2dezsyzABK4dNaCZWvXb9re6HQhupyN2zetX7tswSzQgPj5T1Q3ujAMB16renx+vGVyMTeu3OHBqHh2rMyOUW+Xfr+jHQ3T/sJ96SrtkpbUedEk3rq7pqqxm8ph5+fjbXfQO6Zu8KAAnnUzSfUyqn0oiK/qejK9nJdQCttuItFL2YzS2JwiXW/Kqi6USFdJrFy/eW+iZPbO0zRdgpwlpys9Z3sdklGXKO43x4WEtMwRnbGs9iEpvseEZjr2nUjOTrvAyNaKCmjJ5PXLbUcluLP5/PJ7UBGHC3j87vShMrxF5v2Wo1JWmPV7GhXzpDm/ElROiRm/QrSA2437FXitEPQuNOo314OW4DH4PszoQItou87Qunc/WsbbRtbNL6KFOLR8wQRSHLWD9Fkr2JsXZQLoQotxRZwe2l5Fy3nFFkGwDDWgNLzftT06CPakhRWsRS2oDee3CDVhUWi/hBZdBFvi9O0hEfqJHj0kQj+pQY2oCfa7xquToPeqIMEK1IryiX4zuvUS7E7UtwuH7Mjxh3QTPDT+K2kxase4qWvMe/oJvhu4s5mPGhI4t67UUbByzO+ywzoKdiSMCi5GLSnUbaIadpF8ea+egr123pfgDwOfKDFc+r9gvdkHPx85/9Nn6jKeYn637WfG/v31a3LBNv8SOc/8k5/+zRhjfwwcITbMAgCAUo4nBxhjjLHzg7RJF/M1QUTEIb8hcdIOziaIiMfZKEN0SbfZ+JogIuLZMUPCpLM4myAiHr0QYEiWdLHATOZ7Nh6SpCt5+wgiHvlrgiEblp90PQBw76meZEFIT9oFkMj/9G8sBEPfSU06EXL4Hz42EspQbtJZQpPVMyw0I+ekJV3I+5YJGJIZZdKlYnsyp1h45CRdIbjr9mcEQzZy7gthwRrB9chXLDLCSdfCLrEf+CWKIRv+USjpXeAUEzz6TzRDsaTfANGvw6eZAX7nTtoJol8Pg4dkqUm7QHhv/1tmDL6ke8QFvzEs+CWXoKqIB3kjVtJJ+F+H+4VfMxcMZHuC//edoi/qs1TZjr6oxYa64/RDnUPo+SGybEcnC0KzGfrpVqXQJyYFE9Yyoin/CZTEYt0XTTn6LzuB+zT3SdJsRxfu3G9qZVsfvJtHp2mzvbio4z4wOH4Qlp5twPZblvggPEy6gWn7UHAQJsnWjxsAgG80HiLO1o+D+zjAKepsx5ogVyP0D8KE2QY0Qa5GeIY628AmyNEIj41QZxvYBAGWmn1wkDxbPxc/x9p1/aB9BfBmrAaHtfdbojN2lDWhQ0e/ztjJc7CH94snLeOuHbj083trUh3P0/CAo3tCGZhS3QQnnvVO1OyQrTvo+lW5XoJlQeeoZ2h10Lv7yuCj6Fq9rCtClaPQaLzrSNbwRl0goa/yxu3Vxa85Lsyte10E8zW/dBX+gme6HtfWkifvxT+wvW69X8Srk5DqttrPFaU2ieWX//KiXTC2eNJQHvWG9iWWNsMmA1WQrGyG7lSdyywgeubqXKgC0Wu47EyhJTfx+wqNF/uwZBV6r5lyKRaMeabKuQBssH6VFIUVSvX6l5svelSksC/7buMpG1Wg7DJbVz5f4a1sRWPKBzfwli7LVFI3oPVq/uJv0+vp/eoEitMBxDxCXd5vtU2wAmHu+5R+wgUSAWD6y4TxSigxCWCjirn3QRvIgabM6ZZkmYVipe/bNOfKLWUbWyK1GOtHD0gutSs55y12oGD2c1Jm2n3PzyarSJ1WJdyhezemkdb0nrlOsOR4MlAz7e6Gfs5ZacM909QUlk95aLd5vd0Pp4BCMp86YMbunbJMUI0tfcnGZgNh9zufKcqwgUUkLVyztTnCcLF1zc1JYD0Ztz5a3dC0Z1/rwU7EzoOt+/Y0NTy76hYp///xH2s2+7p6EGN4AAAAAElFTkSuQmCC) no-repeat 50%;
+    background-size: contain
+}
+
+.Recruit__OfficeSliderThumbButton .swiper-button-next:after {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0
+}
+
+.Recruit__OfficeSliderThumbButton .swiper-button-prev {
+    width: 2.777777777777778vw;
+    height: 2.777777777777778vw;
+    outline: none;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAACkVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAkJCQgICAcHBwaGhoVFRUiIiIgICAeHh4cHBwaGhoYGBgjIyMhISEgICAfHx8dHR0bGxsaGhohISEfHx8eHh4iIiIiIiIhISEgICAfHx8eHh4eHh4dHR0iIiIgICAeHh4iIiIiIiIhISEgICAeHh4iIiIhISEgICAgICAfHx8hISEgICAfHx8iIiIhISEhISEgICAfHx8iIiIhISEgICAiIiIhISEgICAiIiIiIiIhISEhISEhISEhISEgICAgICAiIiIhISEhISEgICAiIiIiIiIiIiIhISEgICAgICAiIiIiIiIhISEhISEhISEhISEgICAiIiIiIiIhISEhISEhISEiIiIhISEhISEiIiIiIiIhISEiIiIiIiIiIiIgICAiIiIhISEhISEhISEiIiIiIiIhISEhISEhISEhISEhISEiIiIiIiIhISEhISEiIiIiIiIiIiIhISEhISEhISEiIiIiIiIhISEhISEhISEiIiIiIiIhISEhISEhISEhISEhISEiIiIiIiIiIiIhISEhISEiIiIiIiIhISEhISEhISEiIiIiIiIiIiIiIiIhISEhISEhISEhISEiIiIiIiIhISEhISEhISEhISEiIiIiIiIiIiIiIiIhISEhISEhISEhISEiIiIiIiIiIiIiIiIhISEhISEhISEiIiIkJCQmJiYnJycqKio0NDQ1NTU7OztAQEBKSkpPT09SUlJTU1NcXFxwcHBxcXFycnJzc3ODg4OFhYWOjo6QkJCRkZGSkpKWlpaXl5epqamrq6uwsLCxsbGysrK8vLy9vb3Q0NDR0dHg4ODp6enq6urr6+vs7Ozz8/P6+vr7+/v+/v7///9OybcpAAAArnRSTlMAAQMEBQYHCAkKDA8QERIUFRYXGBkaHB0fISIlJicoKSorLC0wMzQ1Njg7PD4/QEFGSElLTU5QUVNUWFtdYGFiY2RlZmdoamxtb3BxcnN2d3h5ent8fX6AgYKDhYiLjY+QlZaXmJ2eoKOkpqeoqaqrrK6vsLK0tba3uLm8vr/AwcPFx8jJytDS09XX2Nvc3d/g4eLj5OXm5+jq6+zt7u/w8fLz9PX29/j5+vv8/f6raNp7AAAF20lEQVR42tWd+1uURRTHZyGkcMW2DLBCiEjCEEXMaouUTEvLQisppULFCETLyJK1wDBSWSuCsk1zCYXddhcmurddsItld7KbtX9N24u7LOztfWfmzBw+v+/7fJ/nOzPnzOWcJUQA589ZtHLj5m272+0OSh329t3bNm9cuWgOQUD6wgca24OqYnP4uYb7F6YrE5dy9do9LpoU1561RSny1eXd3txLddP7xG15MtVlLrN5qUG8tqXT5aibzqBujLd33QSvMWeLi3Lg2jQbVF5+o49y4mu4Ekxe8VNUCLuuAZGXvZ0KY3u2cHnT1vVTgfRXpYrVt+BFKpiDC5C6C+CzYHeF+2yxUTBsZn598xwUkO55vBnLeh8FxXcfV6Zj2UvB2WvhiGw9VALdBaz6SnqpFJxFbPrK3FQSJ8pZ9N3so9LwVhrXt4pKZY1RfQ9TyTxoTF8VlU6VEX1WqoAb9esr96oQ6F2sV998F1WCS+d6mN9HFXH0Cl373i6qjJf17JufpAppRrnARLI66QQZVCvQU5okAXRQxTgSpoemZ6lynjElEFhDEVAdX9/lbgwC3blxBbZQFLTE07eEImFJbH0Z3VgEdqfhnSEJ5gmOGZJgnjRRRDRF67vMi0mg95IogXUUFbWT9c0awCVwwIx3CsecyOnHsAk8NvGWdDVFx4TUNeU1fAJfjTzZLKMIicyt6zEKrB/Xd8EJjAL7MsICKyhKrNgS1bib5JkenAI9FqmL4Lsj3xj9yYpzAlslyPvg2z/PfsTo8TT407ZPf/onEDht+GdHx7bIpeDe/hYI8td7xn9aqAmshvY2oHGSOR63QnurMcq80MANwXPejvExyxe0QVgK7a3GD2wfKQQbguPeavz9PntSWA/srcZXHBlNK6y3GmeGGb/VGhToAPV2jM9Yv+YgxAzrrcav7F80k2JQbzWMB+HIaVwB6q3GaY6vWgWtMnG8DbAG4Yj9ex2gt+xBOEydgFO3+N6yB+EwTbz7kUTecgThMC1kH5y3PEE4xD5iB/OWKwiHeIF0gXnLFYRD2BkjnQ5v+YLweKxzA3nLGYRDuJkEfvLjWXkCGS0+9Ycsi1knyfAXozImSRfPMuPX4TTvMmPnXKiTO829UHOGuuRO84a6Zu5kwQ+bLIi4Q0zs9AjPp+sFXTENj4zCJKw14lJ+P0jKXyF003QqzqbpQ/ZvFovddsZx+heebScR/JrbL3rjzrdS63T6zDscRx8Ah0fDUcnsl8ybOqgHg35xx2+FUg4wv2c/wDS9CaRwwrblX6aQ7NQO0ZspHCIO0YFvwsJOf844BOEG4SSnf2e+yIEbhONO/xx0+jvGIQg7CCOcNh6SQxfGK6gUTn5t9Beh61gL1gvtC4lEj5kXGWX1LckZf8qa0YdR3/HUqfOwB/zSnYkJZQcOfPpemlLP8xA+cHROagNTjU3g5LfeZmSPbJ1R5Ve1uATWRL2jnoXqoffAxdFP0VEt1nWx2lEgind9WQgr6iKJXcqbdhCLvs60OFX3WASWIS+6il/gmYejbC1r6hb+EdPz6vUlLJ0kOU7V+hxJepMoL/4rTVZgrDhpqE1aoX2e0mHYoaMLksph6MzB3GYh2GhhPuZGFcFqP91tZ6xKKvEHrfqbfSjZhd5qpF2KgphnqJ0LIVvU75KSsEaqvKFVxpseVUqcy74bWNpGlUsrZusvY2u8VSQpprxxFWvrsgIpfQN6LmVv/naRhHosG0dzumDZ7D3Q7f3Wmzg7EJa8DqmPu0Hi/zY/DWivgBaTwZ0UlM2eO01EDDBtTndkiWwUK/zcprNEbCvb1CqhzVjfukNwq13BPu+wEAjmPiYk0x58fC5YR+rcBu4J7dmaC9rTe/YmzpbjWQSaGbe0DTFmpW3LZ8hpLJ99137j8vbfnU0kUvDQYSPqXqkpILIx5S3b2qnD7CH7I5X5JqKIzMUbdnYmCBc7N1ybSdSTf/29jW0dBw71HDkefGpwpOfQgY62R9ddJ+T/P/4DcPb3tk96pVQAAAAASUVORK5CYII=) no-repeat 50%;
+    background-size: contain
+}
+
+.Recruit__OfficeSliderThumbButton .swiper-button-prev:after {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0
+}
+
+.Recruit__OfficeSliderThumbText {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: -2px 0 0;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .833333333333333vw;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
+    word-break: break-all
+}
+
+.Recruit__Job {
+    position: relative;
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 8.333333333333332vw
+}
+
+.Recruit__Job:after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30.90277777777778vw;
+    background-color: #fff;
+    content: ""
+}
+
+.Recruit__JobLowerHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Recruit__JobText {
+    margin-bottom: 2.5vw;
+    font-size: 1.111111111111111vw;
+    text-align: center
+}
+
+.Recruit__JobBannerLink {
+    display: block;
+    position: relative;
+    width: 40.27777777777778vw;
+    height: 19.444444444444446vw;
+    overflow: hidden
+}
+
+.Recruit__JobBannerLink:hover .Recruit__JobBannerBg img {
+    transform: scale(1.13)
+}
+
+.Recruit__JobBannerText {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.Recruit__JobBannerText.-text {
+    color: #fff;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 2.777777777777778vw;
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+
+.Recruit__JobBannerText.-image {
+    width: 18.47222222222222vw;
+    height: 5.416666666666667vw
+}
+
+.Recruit__JobBannerText.-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.Recruit__JobBannerBg {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.Recruit__JobBannerBg:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, .7);
+    content: ""
+}
+
+.Recruit__JobBannerBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .325s
+}
+
+.Single__Container {
+    max-width: 72.22222222222221vw;
+    margin: 0 auto;
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 5.555555555555555vw
+}
+
+.Single__HeadCatsUnit {
+    position: relative;
+    margin-bottom: 2.777777777777778vw;
+    padding-left: 2.222222222222222vw;
+    border-bottom: 1px solid #ccc
+}
+
+.Single__HeadCatsUnit:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: calc(100% - 15px);
+    margin-top: 2px;
+    background-color: #222;
+    content: ""
+}
+
+.Single__CategoryItem {
+    margin-right: 1.388888888888889vw;
+    margin-bottom: 1.041666666666667vw
+}
+
+.Single__CategoryLink {
+    color: #e07c0f;
+    font-size: 1.041666666666667vw
+}
+
+.Single__Staff {
+    margin-bottom: 1.736111111111111vw
+}
+
+.Single__StaffItem {
+    margin-bottom: 1.041666666666667vw
+}
+
+.Single__StaffItem:not(:last-of-type) {
+    margin-right: 1.388888888888889vw
+}
+
+.Single__StaffLink {
+    text-align: center
+}
+
+.Single__StaffName {
+    margin-top: .694444444444444vw;
+    font-size: .833333333333333vw
+}
+
+.Single__StaffJob {
+    margin-top: .694444444444444vw;
+    color: #777;
+    font-size: .694444444444444vw
+}
+
+.Single__StaffImage {
+    width: 3.472222222222222vw;
+    height: 3.472222222222222vw;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #e6e6e6;
+    border-radius: 100px
+}
+
+.Single__StaffImage img {
+    width: 100%;
+    height: 100%
+}
+
+.Single__Content {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Single__Content h2,
+.Single__Content h3,
+.Single__Content h4,
+.Single__Content h5,
+.Single__Content h6 {
+    position: relative;
+    margin-bottom: 1.388888888888889vw;
+    padding-bottom: 1.388888888888889vw;
+    padding-left: 2.222222222222222vw;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.944444444444444vw;
+    letter-spacing: .05em
+}
+
+.Single__Content h2:before,
+.Single__Content h3:before,
+.Single__Content h4:before,
+.Single__Content h5:before,
+.Single__Content h6:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: calc(100% - 20px);
+    background-color: #222;
+    content: ""
+}
+
+.Single__Content p {
+    margin-bottom: 1.388888888888889vw;
+    color: #777;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .05em
+}
+
+.Single__Content ol li {
+    counter-increment: num
+}
+
+.Single__Content ol li:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: .833333333333333vw;
+    font-weight: 700;
+    content: counter(num)
+}
+
+.Single__Content ul li:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: .277777777777778vw;
+    height: .277777777777778vw;
+    transform: translateY(-50%);
+    background-color: #222;
+    content: ""
+}
+
+.Single__Content li {
+    position: relative;
+    padding-left: 1.6rem;
+    color: #777;
+    letter-spacing: .05em;
+    list-style-type: none
+}
+
+.Single__Content a,
+.Single__Content li {
+    margin-bottom: 1.388888888888889vw;
+    font-size: 1.041666666666667vw
+}
+
+.Single__Content a {
+    color: #e07c0f;
+    text-decoration: underline
+}
+
+.Single__Content picture {
+    width: 100%
+}
+
+.Single__Content img {
+    display: block;
+    width: 100%;
+    margin-bottom: 4.166666666666666vw;
+    object-fit: contain
+}
+
+.Single__Content blockquote {
+    margin-bottom: 1.388888888888889vw;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ccc
+}
+
+.Single__Content blockquote p {
+    margin-bottom: 0;
+    color: #777;
+    font-size: .902777777777778vw;
+    letter-spacing: .05em
+}
+
+.Single__Project {
+    padding: 5.555555555555555vw 8.333333333333332vw 6.944444444444445vw;
+    background-color: #fff
+}
+
+.Single__ProjectLowerHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.PostProjectCollection {
+    position: relative;
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.PostProjectCollection .ProjectCard {
+    margin-bottom: 0
+}
+
+.PostProjectCollection:after {
+    display: block;
+    width: 25vw;
+    content: ""
+}
+
+.yarpp-related {
+    margin: 0!important
+}
+
+.StaffDetail__Container {
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 5.555555555555555vw
+}
+
+.StaffDetail__OverSnsUnit {
+    width: 77.77777777777779vw;
+    margin: 0 auto 5.555555555555555vw
+}
+
+.StaffDetail__Overview {
+    margin-bottom: 1.388888888888889vw;
+    padding: 2.777777777777778vw 5.555555555555555vw;
+    background-color: #fff;
+    box-shadow: 0 0 25px hsla(0, 0%, 46.7%, .2)
+}
+
+.StaffDetail__OverviewCatch {
+    width: 48.40277777777778vw
+}
+
+.StaffDetail__OverviewVisual {
+    flex: 1;
+    margin-right: 5.902777777777778vw
+}
+
+.StaffDetail__NameJobUnit {
+    text-align: center
+}
+
+.StaffDetail__Name {
+    margin-top: 1.041666666666667vw;
+    font-size: 1.736111111111111vw
+}
+
+.StaffDetail__Job {
+    margin-top: .694444444444444vw;
+    color: #777;
+    font-size: .902777777777778vw
+}
+
+.StaffDetail__Image {
+    width: 12.36111111111111vw;
+    height: 12.36111111111111vw;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #e6e6e6;
+    border-radius: 100%
+}
+
+.StaffDetail__Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.StaffDetail__Comment {
+    color: #777;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .03em;
+    line-height: 2.4
+}
+
+.StaffDetail__SnsLabel {
+    margin-right: 1.388888888888889vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: .902777777777778vw;
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+
+.StaffDetail__SnsItem:not(:last-of-type) {
+    margin-right: .694444444444444vw
+}
+
+.StaffDetail__SnsLink {
+    display: block;
+    position: relative;
+    width: 2.777777777777778vw;
+    height: 2.777777777777778vw
+}
+
+.StaffDetail__SnsLink img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .225s
+}
+
+.StaffDetail__SnsLink:hover .-d {
+    opacity: 0
+}
+
+.StaffDetail__SnsLink:hover .-h {
+    opacity: 1
+}
+
+.StaffDetail__SnsLink .-h {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0
+}
+
+.StaffDetail__Medias {
+    padding-right: 8.333333333333332vw;
+    padding-left: 8.333333333333332vw
+}
+
+.StaffDetail__MediasLowerHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.StaffDetail__MediasCollection {
+    position: relative;
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.StaffDetail__MediasCollection:after {
+    display: block;
+    width: 25vw;
+    content: ""
+}
+
+.Team__Container {
+    max-width: 72.22222222222221vw;
+    margin: 0 auto;
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 2.777777777777778vw
+}
+
+.Team__StaffCollection {
+    margin-right: -1.388888888888889vw;
+    overflow: hidden
+}
+
+.Thanks__Container {
+    padding-top: 5.555555555555555vw;
+    padding-bottom: 9.027777777777777vw
+}
+
+.Thanks__Heading {
+    display: inline-block;
+    padding-bottom: 1.041666666666667vw;
+    border-bottom: 3px solid #222;
+    font-size: 1.736111111111111vw
+}
+
+.Thanks__Heading,
+.Thanks__Text {
+    margin-bottom: 2.777777777777778vw;
+    text-align: center
+}
+
+.Thanks__Text {
+    font-size: 1.111111111111111vw
+}
+
+.Top__Heading {
+    display: inline-flex
+}
+
+.Top__Heading .-en {
+    position: relative;
+    margin-bottom: 3.75vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 3.125vw;
+    letter-spacing: .03em;
+    text-transform: uppercase
+}
+
+.Top__Heading .-en.-active:after,
+.Top__Heading .-en.-active:before {
+    transform: scaleX(1)!important
+}
+
+.Top__Heading .-en:after,
+.Top__Heading .-en:before {
+    display: block;
+    position: absolute;
+    width: calc(100% + 40px);
+    min-width: 17.01388888888889vw;
+    max-width: 18.819444444444443vw;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #222;
+    content: "";
+    transition: transform .6s cubic-bezier(.76, 0, .24, 1)
+}
+
+.Top__Heading .-en:before {
+    top: -2.222222222222222vw
+}
+
+.Top__Heading .-en:after {
+    bottom: -2.083333333333333vw
+}
+
+.Top__Heading .-en .-red {
+    color: #d4234d
+}
+
+.Top__Heading .-en .-orange {
+    color: #e9b11d
+}
+
+.Top__Heading .-ja {
+    font-size: .972222222222222vw;
+    letter-spacing: .18em
+}
+
+.Top__Mv {
+    position: relative;
+    height: calc(var(--vh, 1vh)*100);
+    overflow: hidden
+}
+
+.MvBlur {
+    z-index: -3;
+    position: absolute;
+    top: 50%;
+    right: -17.36111111111111vw;
+    width: 67.5vw;
+    margin-top: 2.777777777777778vw;
+    transform-origin: 20% 20%;
+    animation: bgblur 2.5s 2s forwards;
+    opacity: 0;
+    will-change: opacity
+}
+
+.MvBlur img {
+    width: 100%;
+    height: 100%
+}
+
+.Top__MvCanvas {
+    z-index: -2;
+    position: absolute;
+    top: 50%;
+    right: -6.944444444444445vw;
+    width: 70.54027777777777vw;
+    margin-top: 4.861111111111112vw;
+    transform: translateY(-50%)
+}
+
+.Top__MvMeta {
+    padding-top: 5.201560468140442vw;
+    padding-left: 5.555555555555555vw
+}
+
+.Top__MvText {
+    margin-bottom: 1.736111111111111vw;
+    font-size: 1.875vw;
+    letter-spacing: .03em
+}
+
+.Top__MvText span {
+    padding-left: 2px;
+    font-size: 1.944444444444444vw
+}
+
+.Top__MvHeading {
+    font-size: 4.027777777777778vw;
+    letter-spacing: .03em;
+    line-height: 1.55
+}
+
+.Top__MvHeading .-listType {
+    display: inline-block;
+    position: relative
+}
+
+.Top__MvHeading .-listType.-active:after {
+    opacity: 1
+}
+
+.Top__MvHeading .-listType:after {
+    position: absolute;
+    top: -1.25vw;
+    left: 50%;
+    width: .902777777777778vw;
+    height: .902777777777778vw;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    background-color: #d4234d;
+    content: "";
+    opacity: 0;
+    transition: opacity .225s
+}
+
+.Top__Mission {
+    position: relative;
+    margin-bottom: 9.375vw;
+    padding-top: 10.416666666666668vw;
+    padding-bottom: 11.11111111111111vw
+}
+
+.Top__Mission:after,
+.Top__Mission:before {
+    display: block;
+    position: absolute;
+    height: 100%;
+    content: ""
+}
+
+.Top__Mission:before {
+    z-index: -1;
+    top: 0;
+    width: 27.430555555555557vw;
+    background-color: #e6e6e6
+}
+
+.Top__Mission:after {
+    z-index: -2;
+    top: -2.777777777777778vw;
+    right: 0;
+    width: 90.97222222222221vw;
+    background-color: #fff
+}
+
+.Top__MissionStrokeText {
+    speak: none;
+    position: absolute;
+    right: -13.194444444444445vw;
+    bottom: -6.111111111111111vw;
+    width: 60.55555555555555vw;
+    height: 10vw;
+    pointer-events: none
+}
+
+.Top__MissionStrokeText img {
+    width: 100%;
+    height: 100%
+}
+
+.Top__MissionContainer {
+    position: relative;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__MissionHeading {
+    margin-bottom: 3.611111111111111vw
+}
+
+.Top__MissionPointList {
+    margin-top: 50px;
+    position: relative;
+    padding-left: 2.777777777777778vw
+}
+
+.Top__MissionPointItem {
+    width: 25vw;
+    min-height: 35.486111111111114vw;
+    padding: .833333333333333vw 2.777777777777778vw 2.777777777777778vw;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 25px hsla(0, 0%, 46.7%, .2)
+}
+
+.Top__MissionPointItem:not(:last-of-type) {
+    margin-right: 1.388888888888889vw
+}
+
+.Top__MissionPointImage {
+    position: relative;
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__MissionPointImage img {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.Top__MissionPointImage:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    background: linear-gradient(#d4234d, #e9b11d);
+    content: "";
+    filter: blur(50px);
+    opacity: .1
+}
+
+.Top__MissionPointImage.-first {
+    width: 19.479166666666668vw;
+    height: 12.105555555555556vw;
+    margin-top: 7.638888888888889vw;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.Top__MissionPointImage.-first:after {
+    top: -5.555555555555555vw;
+    width: 18.958333333333332vw;
+    height: 18.958333333333332vw
+}
+
+.Top__MissionPointImage.-second {
+    width: 15.277777777777779vw;
+    height: 16.319444444444446vw;
+    margin-top: 3.472222222222222vw;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.Top__MissionPointImage.-second:after {
+    top: 0;
+    width: 18.958333333333332vw;
+    height: 18.958333333333332vw
+}
+
+.Top__MissionPointImage.-third {
+    width: 20.34722222222222vw;
+    height: 15.138888888888888vw;
+    margin-top: 4.652777777777778vw;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.Top__MissionPointImage.-third:after {
+    top: 0;
+    width: 18.958333333333332vw;
+    height: 18.958333333333332vw
+}
+
+.Top__MissionPointHeading {
+    margin-bottom: .833333333333333vw
+}
+
+.Top__MissionPointHeadingStroke {
+    display: block;
+    width: 3.541666666666667vw;
+    height: 2.430555555555556vw;
+    margin-right: 1.111111111111111vw
+}
+
+.Top__MissionPointHeadingStroke.-first {
+    width: 2.878472222222222vw
+}
+
+.Top__MissionPointHeadingStroke img,
+.Top__MissionPointHeadingStroke img[src$=".svg"],
+.Top__MissionPointHeadingStroke object,
+.Top__MissionPointHeadingStroke object[src$=".svg"],
+.Top__MissionPointHeadingStroke svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.Top__MissionPointText {
+    font-size: .868055555555556vw;
+    letter-spacing: .03em;
+    text-align: justify
+}
+
+.Top__Service {
+    margin-bottom: 11.11111111111111vw
+}
+
+.Top__ServiceContainer {
+    padding-right: 8.333333333333332vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__ServiceHeading {
+    flex: 1
+}
+
+.Top__ServiceText {
+    max-width: 55.41666666666667vw;
+    margin-top: -4.513888888888888vw;
+    font-size: 1.076388888888889vw;
+    letter-spacing: .02em
+}
+
+.Top__ServiceMeta {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__ServiceCollection {
+    position: relative;
+    max-width: 77.77777777777779vw;
+    margin: 0 auto
+}
+
+.Top__ServiceCollection:after {
+    display: block;
+    width: 25vw;
+    content: ""
+}
+
+.Top__ServiceButton {
+    margin-top: 2.777777777777778vw
+}
+
+.Top__Recruit {
+    position: relative;
+    margin-bottom: 9.722222222222223vw;
+    padding-top: 12.5vw;
+    padding-bottom: 10.972222222222221vw
+}
+
+.Top__Recruit:after,
+.Top__Recruit:before {
+    display: block;
+    position: absolute;
+    height: 100%;
+    content: ""
+}
+
+.Top__Recruit:before {
+    top: -2.777777777777778vw;
+    right: 0;
+    width: 27.083333333333332vw;
+    background-color: #e6e6e6
+}
+
+.Top__Recruit:after {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 90.97222222222221vw;
+    background-color: #fff
+}
+
+.Top__RecruitContainer {
+    position: relative;
+    padding-right: 8.333333333333332vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__RecruitInnerMeta {
+    padding-left: 2.777777777777778vw
+}
+
+.Top__RecruitHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__RecruitMeta {
+    width: 43.05555555555556vw
+}
+
+.Top__RecruitImage {
+    position: relative;
+    width: 34.72222222222222vw;
+    height: 45.83333333333333vw;
+    margin-top: -13.194444444444445vw;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .1)
+}
+
+.Top__RecruitImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+@if $position {
+    object-position: $position;
+    font-family:"object-fit: #{$fit}; object-position: #{$position}"
+}
+
+@else {
+    font-family:"object-fit: #{$fit}"
+}
+
+.Top__RecruitText {
+    margin-bottom: 2.777777777777778vw;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .05em;
+    line-height: 1.95
+}
+
+.Top__RecruitButton:not(:last-of-type) {
+    margin-bottom: 1.388888888888889vw
+}
+
+.Top__RecruitStrokeText img {
+    width: 100%;
+    height: 100%
+}
+
+.Top__Media {
+    margin-bottom: 11.11111111111111vw
+}
+
+.Top__MediaHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__MediaContainer {
+    padding-right: 11.11111111111111vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__MediaCollection {
+    position: relative;
+    padding-left: 2.777777777777778vw
+}
+
+.Top__MediaCollection:after {
+    display: block;
+    width: 25vw;
+    content: ""
+}
+
+.Top__MediaButton {
+    margin-top: 2.777777777777778vw
+}
+
+.Top__News {
+    position: relative;
+    margin-bottom: 9.375vw;
+    padding-top: 7.638888888888889vw;
+    padding-bottom: 8.333333333333332vw
+}
+
+.Top__News:after,
+.Top__News:before {
+    display: block;
+    position: absolute;
+    height: 100%;
+    content: ""
+}
+
+.Top__News:before {
+    z-index: -1;
+    top: 0;
+    width: 27.083333333333332vw;
+    background-color: #e6e6e6
+}
+
+.Top__News:after {
+    z-index: -2;
+    top: -2.777777777777778vw;
+    right: 0;
+    width: 90.97222222222221vw;
+    background-color: #fff
+}
+
+.Top__NewsContainer {
+    padding-right: 11.11111111111111vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__NewsHeading {
+    margin-bottom: 3.333333333333333vw
+}
+
+.Top__NewsCollection {
+    padding-right: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Top__NewsCard {
+    border-bottom: 1px solid #ccc
+}
+
+.Top__NewsCard:not(:last-of-type) {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__NewsCardAnchor {
+    padding-right: 2.777777777777778vw;
+    padding-bottom: 2.777777777777778vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Top__NewsCardDate {
+    margin-right: 2.777777777777778vw;
+    color: #222;
+    font-size: 1.041666666666667vw
+}
+
+.Top__NewsCardHeading {
+    color: #222;
+    font-size: 1.111111111111111vw
+}
+
+.Top__NewsStrokeText {
+    speak: none;
+    position: absolute;
+    top: 2.083333333333333vw;
+    right: .694444444444444vw;
+    width: 37.138888888888886vw;
+    height: 10vw;
+    pointer-events: none
+}
+
+.Top__NewsStrokeText img {
+    width: 100%;
+    height: 100%
+}
+
+.Top__ContactContainer {
+    padding-right: 16.666666666666664vw;
+    padding-bottom: 6.944444444444445vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__ContactHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__ContactForm {
+    margin-left: 8.333333333333332vw;
+    padding: 5.555555555555555vw;
+    background-color: #fff;
+    box-shadow: 0 0 25px hsla(0, 0%, 46.7%, .2)
+}
+
+.Top__ContactForm .From__Item:not(:last-of-type) {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__ContactForm .Form__Heading {
+    margin-bottom: .833333333333333vw;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .03em
+}
+
+.Top__ContactForm .Form__Heading .-req {
+    color: #d4234d
+}
+
+.Top__ContactForm .mwFormElm {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    letter-spacing: .03em
+}
+
+.Top__ContactForm .mwFormElm.-complate {
+    border: 1px solid #e9b11d;
+    background-color: rgba(233, 177, 29, .05)
+}
+
+.Top__ContactForm .mwFormElm.-error {
+    border: 1px solid #d4234d;
+    background-color: #fceef3
+}
+
+.Top__ContactForm .mwFormElm:-ms-input-placeholder {
+    color: #ccc;
+    letter-spacing: .05em
+}
+
+.Top__ContactForm .mwFormElm::placeholder {
+    color: #ccc;
+    letter-spacing: .05em
+}
+
+.Top__ContactForm .mwFormTextArea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    height: 10.416666666666668vw;
+    max-height: 10.416666666666668vw;
+    padding: 14px 20px;
+    overflow-y: scroll;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    letter-spacing: .03em;
+    line-height: 2
+}
+
+.Top__ContactForm .mwFormTextArea:-ms-input-placeholder {
+    color: #ccc
+}
+
+.Top__ContactForm .mwFormTextArea::placeholder {
+    color: #ccc
+}
+
+.Top__ContactForm .mwFormTextArea.-complate {
+    border: 1px solid #e9b11d;
+    background-color: rgba(233, 177, 29, .05)
+}
+
+.Top__ContactForm .mwFormTextArea.-error {
+    border: 1px solid #d4234d;
+    background-color: #fceef3
+}
+
+.Top__ContactForm .mwFormTextArea::-webkit-scrollbar {
+    display: none
+}
+
+.Top__ContactFormError {
+    display: none;
+    margin-top: .555555555555556vw;
+    color: #d4234d;
+    font-size: .902777777777778vw
+}
+
+.Top__ContactFormError.-show {
+    display: block
+}
+
+.Top__ContactAgrmt {
+    margin-top: 2.777777777777778vw
+}
+
+.Top__ContactAgrmtHeading {
+    margin-bottom: .833333333333333vw;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .03em
+}
+
+.Top__ContactAgrmtHeading .-req {
+    color: #d4234d
+}
+
+.Top__ContactAgrmtHeading .-haifun {
+    display: inline-block;
+    margin-left: 1.875vw
+}
+
+.Top__ContactAgrmtUnit {
+    display: block;
+    margin-bottom: 2.777777777777778vw;
+    padding-left: 1.458333333333333vw
+}
+
+.Top__ContactAgrmtBody {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 9.86111111111111vw;
+    max-height: 9.86111111111111vw;
+    margin-bottom: 2.083333333333333vw;
+    padding: 15px;
+    overflow-y: scroll;
+    border: 1px solid #707070;
+    color: #777;
+    font-size: .972222222222222vw
+}
+
+.Top__ContactAgrmtBody li {
+    list-style-type: none
+}
+
+.Top__ContactAgrmtBody li:not(:last-of-type) {
+    margin-bottom: 16px
+}
+
+.Top__ContactAgrmtBody p {
+    margin-bottom: 20px;
+    font-size: 1.4rem
+}
+
+.Top__ContactFormCheckbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    text-indent: -100%;
+    opacity: 0
+}
+
+.Top__ContactFormCheckbox:checked+.Top__ContactAgrmtLabel:after {
+    opacity: 1
+}
+
+.Top__ContactAgrmtLabel {
+    position: relative;
+    padding-left: .277777777777778vw;
+    color: #000;
+    font-size: 1.041666666666667vw;
+    cursor: pointer
+}
+
+.Top__ContactAgrmtLabel:after,
+.Top__ContactAgrmtLabel:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    transition: opacity .125s
+}
+
+.Top__ContactAgrmtLabel:after {
+    top: .555555555555556vw;
+    left: -1.284722222222222vw;
+    width: .694444444444444vw;
+    height: .347222222222222vw;
+    transform: rotate(-45deg);
+    border-left: .138888888888889vw solid #222;
+    border-bottom: .138888888888889vw solid #222;
+    border-right-width: .138888888888889vw;
+    border-top-width: .138888888888889vw;
+    opacity: 0
+}
+
+.Top__ContactAgrmtLabel:before {
+    left: -1.666666666666667vw;
+    width: 1.388888888888889vw;
+    height: 1.388888888888889vw;
+    border: 1px solid #9fa0a0;
+    border-radius: 2px;
+    background-color: #f7f7f7
+}
+
+.Top__ContactSubmit .mwFormSend {
+    width: 25vw;
+    height: 4.861111111111112vw;
+    background-color: #222;
+    color: #fff;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 1.25vw;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    transition: color .225s, background-color .225s
+}
+
+.Top__ContactSubmit .mwFormSend.-disabled {
+    background-color: #777;
+    pointer-events: none
+}
+
+.Top__ContactFormText {
+    margin-bottom: 2.777777777777778vw;
+    font-size: 1.041666666666667vw;
+    letter-spacing: .05em
+}
+
+.Top__About {
+    position: relative;
+    margin-bottom: 6.25vw;
+    padding-top: 8.333333333333332vw;
+    padding-bottom: 8.333333333333332vw
+}
+
+.Top__About:after,
+.Top__About:before {
+    display: block;
+    position: absolute;
+    height: 100%;
+    content: ""
+}
+
+.Top__About:before {
+    top: -2.777777777777778vw;
+    right: 0;
+    width: 27.083333333333332vw;
+    background-color: #e6e6e6
+}
+
+.Top__About:after {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 90.97222222222221vw;
+    background-color: #fff
+}
+
+.Top__AboutContainer {
+    z-index: 2;
+    position: relative;
+    padding-right: 8.333333333333332vw;
+    padding-left: 8.333333333333332vw
+}
+
+.Top__AboutStrokeText img {
+    width: 100%;
+    height: 100%
+}
+
+.Top__AboutHeading {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__AboutMeta {
+    margin-right: 5.555555555555555vw
+}
+
+.Top__AboutDef {
+    width: 41.00694444444444vw;
+    padding-left: 2.777777777777778vw
+}
+
+.Top__AboutMap {
+    position: relative;
+    width: 34.72222222222222vw;
+    height: 45.83333333333333vw;
+    margin-top: -7.638888888888889vw;
+    overflow: hidden;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .1)
+}
+
+.Top__AboutMap iframe {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.Top__AboutDefItem {
+    padding-bottom: 1.388888888888889vw;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.Top__AboutDefItem:not(:last-of-type) {
+    margin-bottom: 2.777777777777778vw
+}
+
+.Top__AboutDefHeading {
+    flex: 1;
+    font-size: 1.041666666666667vw
+}
+
+.Top__AboutDefBody {
+    width: 27.013888888888886vw;
+    padding-right: 1.388888888888889vw;
+    color: #777;
+    font-size: 1.041666666666667vw
+}
+
+@keyframes bgblur {
+    0% {
+        transform: translate3d(0, -50%, 0) scale(1);
+        opacity: 0
+    }
+    to {
+        transform: translate3d(-25vw, -50%, 0) scale(1.2, 1.3);
+        opacity: .2
+    }
+}
+
+@keyframes bgblursp {
+    0% {
+        transform: translate3d(0, -50%, 0) scale(1);
+        opacity: 0
+    }
+    to {
+        transform: translate3d(-15vw, -50%, 0) scale(1.3, 1.5);
+        opacity: .2
+    }
+}
+
+@media (min-width:770px) {
+    .Top__RecruitStrokeText {
+        bottom: -7.291666666666667vw;
+        height: 62.5vw
+    }
+    .Top__AboutStrokeText,
+    .Top__RecruitStrokeText {
+        speak: none;
+        position: absolute;
+        right: 1.388888888888889vw;
+        width: 10vw;
+        pointer-events: none
+    }
+    .Top__AboutStrokeText {
+        bottom: -9.375vw;
+        height: 70.18055555555556vw
+    }
+}
+
+@media (min-width:1441px) {
+    html {
+        font-size: 10px
+    }
+}
+
+@media (max-width:960px) {
+    .MediaCard {
+        width: calc(50% - 2rem)
+    }
+    .MediaCard__CardDesc {
+        min-height: auto
+    }
+}
+
+@media (max-width:769px) {
+    .Br.-pc {
+        display: none
+    }
+    .Br.-sp {
+        display: block
+    }
+    .-is-strip:not(:last-of-type) {
+        margin-bottom: 4.161248374512354vw
+    }
+    .BottomBanner {
+        flex-direction: column
+    }
+    .BottomBanner__Link {
+        width: 100%;
+        height: 24.44733420026008vw
+    }
+    .BottomBanner__Link:not(:last-of-type) {
+        border-right: 0;
+        border-bottom: 1px solid #e6e6e6
+    }
+    .BottomBanner__LinkBg:after {
+        display: none
+    }
+    .BottomBanner__LinkBody {
+        color: #fff
+    }
+    .BottomBanner__LinkBody.-en {
+        margin-bottom: 1.690507152145644vw;
+        font-size: 2.600780234070221vw
+    }
+    .BottomBanner__LinkBody.-ja {
+        font-size: 1.560468140442133vw
+    }
+    .Breadcrumb {
+        position: static;
+        padding-top: 1.30039011703511vw;
+        padding-right: 2.600780234070221vw;
+        padding-left: 2.600780234070221vw
+    }
+    .Breadcrumb>span {
+        margin: 2px 0;
+        font-size: 1.30039011703511vw;
+        letter-spacing: .1em;
+        line-height: 1.3
+    }
+    .Breadcrumb>span:not(:last-of-type):after {
+        margin-right: .260078023407022vw;
+        margin-left: .260078023407022vw;
+        font-size: 2.080624187256177vw
+    }
+    .Breadcrumb a {
+        font-size: 1.30039011703511vw;
+        letter-spacing: .1em;
+        line-height: 1.3
+    }
+    .Button.-large,
+    .Button.-medium {
+        width: 38.36150845253576vw;
+        height: 7.802340702210664vw;
+        font-size: 2.080624187256177vw
+    }
+    .GotoTop {
+        width: 3.381014304291288vw;
+        height: 3.381014304291288vw
+    }
+    .LowerHead {
+        height: 20.806241872561767vw;
+        padding-bottom: 2.600780234070221vw
+    }
+    .LowerHead__StrokeText.-media,
+    .LowerHead__StrokeText.-mission {
+        right: -10.403120936280883vw;
+        bottom: 0;
+        width: 52.27958387516255vw;
+        height: 9.362808842652797vw
+    }
+    .LowerHead__StrokeText.-staff {
+        right: 13.003901170351106vw;
+        bottom: 0;
+        width: 52.27958387516255vw;
+        height: 9.362808842652797vw
+    }
+    .LowerHead__StrokeText.-project,
+    .LowerHead__StrokeText.-recruit {
+        right: -10.403120936280883vw;
+        bottom: 0;
+        width: 52.27958387516255vw;
+        height: 9.362808842652797vw
+    }
+    .LowerHead__StrokeText.-contact,
+    .LowerHead__StrokeText.-pagenotfound {
+        right: -5.071521456436931vw;
+        bottom: 0;
+        width: 58.60858257477243vw;
+        height: 9.362808842652797vw
+    }
+    .LowerHead__Heading .-en {
+        margin-right: .650195058517555vw;
+        font-size: 3.250975292587777vw
+    }
+    .LowerHead__Heading .-ja {
+        font-size: 1.30039011703511vw
+    }
+    .LowerHeading__Body.-en,
+    .LowerHeading__Body.-tax {
+        font-size: 2.600780234070221vw
+    }
+    .LowerHeading__Body.-en {
+        margin-bottom: 4vw
+    }
+    .LowerHeading__Body.-en:after {
+        bottom: -1.950585175552666vw;
+        width: 100%;
+        min-width: 9.102730819245773vw;
+        height: 2px
+    }
+    .LowerHeading__Body.-ja {
+        font-size: 1.30039011703511vw
+    }
+    .MediaCard {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none
+    }
+    .MediaCard:not(:last-of-type) {
+        margin-bottom: 1.30039011703511vw
+    }
+    .MediaCard__Anchor {
+        height: auto;
+        max-height: none
+    }
+    .MediaCard__Thumb {
+        width: 100%;
+        height: 16.25487646293888vw
+    }
+    .MediaCard__Body {
+        height: auto;
+        padding: 1.950585175552666vw 2.600780234070221vw 1.30039011703511vw
+    }
+    .MediaCard__Heading {
+        height: auto;
+        margin-bottom: .650195058517555vw;
+        font-size: 1.560468140442133vw
+    }
+    .MediaCard__CardDesc {
+        min-height: auto;
+        margin-bottom: 1.560468140442133vw;
+        font-size: 1.560468140442133vw
+    }
+    .MediaCard__CategoryItem:nth-of-type(n+3) {
+        display: none
+    }
+    .MediaCard__CategoryItem {
+        min-height: auto;
+        margin-bottom: 10px;
+        font-size: 1.560468140442133vw
+    }
+    .MediaCard__CategoryItem:not(:last-of-type) {
+        margin-right: 1.30039011703511vw
+    }
+    .MediaCard__Date {
+        margin-bottom: 1.040312093628089vw;
+        font-size: 1.30039011703511vw
+    }
+    .MediaCard__StaffList {
+        position: static;
+        margin-top: 5px
+    }
+    .MediaCard__StaffItem {
+        width: 5.201560468140442vw;
+        height: 5.201560468140442vw
+    }
+    .MediaCard__StaffItem:not(:first-of-type) {
+        margin-left: -2.600780234070221vw
+    }
+    .MenuButton {
+        display: block;
+        position: absolute;
+        top: 3.641092327698309vw;
+        right: 3.250975292587777vw;
+        width: 5.201560468140442vw
+    }
+    .Pagination__Link {
+        font-size: 1.950585175552666vw
+    }
+    .Pagination__PageItem:not(:last-of-type) {
+        margin-right: 2.600780234070221vw
+    }
+    .Pagination__Button {
+        width: 1.30039011703511vw;
+        height: 1.30039011703511vw
+    }
+    .Pagination__Item.-next {
+        right: -1.30039011703511vw
+    }
+    .Pagination__Item.-prev {
+        left: -3.901170351105332vw
+    }
+    .ProjectCard {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none
+    }
+    .ProjectCard:not(:last-of-type) {
+        margin-bottom: 1.30039011703511vw
+    }
+    .ProjectCard__Anchor {
+        height: auto;
+        max-height: none
+    }
+    .ProjectCard__Thumb {
+        width: 100%;
+        height: 16.25487646293888vw
+    }
+    .ProjectCard__Body {
+        height: auto;
+        padding: 1.950585175552666vw 2.600780234070221vw 1.30039011703511vw
+    }
+    .ProjectCard__Heading {
+        height: auto;
+        margin-bottom: .650195058517555vw;
+        font-size: 1.560468140442133vw
+    }
+    .ProjectCard__CardDesc {
+        min-height: auto;
+        margin-bottom: 1.560468140442133vw;
+        font-size: 1.560468140442133vw
+    }
+    .ProjectCard__CategoryItem:nth-of-type(n+3) {
+        display: none
+    }
+    .ProjectCard__CategoryItem {
+        min-height: auto;
+        margin-bottom: 10px;
+        font-size: 1.560468140442133vw
+    }
+    .ProjectCard__CategoryItem:not(:last-of-type) {
+        margin-right: 1.30039011703511vw
+    }
+    .StaffCard {
+        width: 11.180555555555555vw;
+        margin-right: 0;
+        margin-bottom: 2.600780234070221vw;
+        float: none
+    }
+    .StaffCard__Image {
+        width: 20.93628088426528vw;
+        height: 20.93628088426528vw
+    }
+    .StaffCard__Name {
+        margin-top: 1.30039011703511vw;
+        font-size: 1.820546163849155vw
+    }
+    .StaffCard__Job {
+        margin-top: 1.040312093628089vw;
+        font-size: 1.30039011703511vw
+    }
+    .PageNotFound__Container {
+        padding: 40px 20px
+    }
+    .PageNotFound__Heading {
+        margin-bottom: 2.600780234070221vw;
+        padding-bottom: 0;
+        border-bottom: 0;
+        font-size: 1.950585175552666vw;
+        line-height: 1.8
+    }
+    .PageNotFound__Text {
+        margin-bottom: 5.201560468140442vw;
+        font-size: 1.560468140442133vw;
+        text-align: left
+    }
+    .Footer {
+        padding: 2.600780234070221vw 3.901170351105332vw 2.600780234070221vw 2.600780234070221vw
+    }
+    .Footer__Head {
+        margin-bottom: 4.421326397919375vw
+    }
+    .Footer__Logo {
+        width: 12.093628088426527vw;
+        height: 3.381014304291288vw
+    }
+    .Footer__Nav {
+        display: none
+    }
+    .Footer__Sns {
+        position: absolute;
+        top: 2.600780234070221vw;
+        right: 3.901170351105332vw
+    }
+    .Footer__SnsLabel {
+        margin-right: 1.040312093628089vw;
+        font-size: 1.30039011703511vw
+    }
+    .Footer__SnsItem:not(:last-of-type) {
+        margin-right: .520156046814044vw
+    }
+    .Footer__SnsLink {
+        width: 3.901170351105332vw;
+        height: 3.901170351105332vw
+    }
+    .Footer__Copyright {
+        display: block;
+        width: 100%;
+        font-size: 1.560468140442133vw;
+        text-align: center
+    }
+    .Header {
+        height: 10.403120936280883vw;
+        padding-top: 0;
+        padding-right: 5.201560468140442vw;
+        padding-left: 5.201560468140442vw
+    }
+    .Header__Logo {
+        width: 20.806241872561767vw;
+        height: 5.851755526657997vw
+    }
+    .Header__Nav.-active {
+        opacity: 1;
+        pointer-events: auto
+    }
+    .Header__Nav {
+        -webkit-overflow-scrolling: touch;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(var(--vh, 1vh)*100);
+        overflow-y: auto;
+        background-color: #fff;
+        opacity: 0;
+        pointer-events: none
+    }
+    .Header__List {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%
+    }
+    .Header__Item:not(:last-of-type) {
+        margin-right: 0;
+        margin-bottom: 6.501950585175553vw
+    }
+    .Header__Link {
+        font-size: 5.201560468140442vw
+    }
+    .Medias__Conatiner {
+        padding: 5.201560468140442vw 2.600780234070221vw 7.802340702210664vw
+    }
+    .Medias__Body {
+        padding: 0
+    }
+    .Mission__LowerHeading {
+        margin-top: 5.201560468140442vw
+    }
+    .Medias__Category {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Medias__CategoryText,
+    .Medias__CategoryText p {
+        margin-top: 1.560468140442133vw;
+        font-size: 1.560468140442133vw
+    }
+    .Medias__CategoryText.-all,
+    .Medias__CategoryText p.-all {
+        margin-top: 2.600780234070221vw;
+        font-size: 1.560468140442133vw
+    }
+    .Medias__CategoryUnit {
+        flex-direction: column;
+        padding: 1.950585175552666vw 3.120936280884266vw .650195058517555vw
+    }
+    .Medias__CategoryAllWrap {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.560468140442133vw;
+        text-align: center
+    }
+    .Medias__CategoryList {
+        align-items: center;
+        justify-content: center;
+        width: 100%
+    }
+    .Medias__CategoryItem {
+        margin-right: 1.950585175552666vw;
+        margin-bottom: 1.30039011703511vw
+    }
+    .Medias__CategoryAll,
+    .Medias__CategoryLink {
+        font-size: 1.560468140442133vw
+    }
+    .Medias__CategoryAll {
+        font-size: 1.950585175552666vw;
+        font-weight: 700
+    }
+    .Medias__Collection {
+        margin-bottom: 5.201560468140442vw;
+        padding-left: 0
+    }
+    .Medias__Collection:after {
+        display: none
+    }
+    .Mission__Container {
+        padding: 0 20px
+    }
+    .Mission__Mission1 {
+        padding-top: 3.055555555555555vw;
+        padding-bottom: 2.777777777777778vw
+    }
+    .Mission__Mission1Body {
+        padding: 0
+    }
+    .Mission__Mission1LowerHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Mission__Mission1Heading {
+        margin-bottom: 1.30039011703511vw;
+        font-size: 2.340702210663199vw;
+        line-height: 1.5
+    }
+    .Mission__Mission1Text {
+        max-width: 100%;
+        padding-right: 1.30039011703511vw;
+        font-size: 1.560468140442133vw;
+        line-height: 1.8
+    }
+    .Mission__Value {
+        padding-top: 3.055555555555555vw;
+        padding-bottom: 2.777777777777778vw
+    }
+    .Mission__ValueLowerHeading {
+        margin-bottom: 4.161248374512354vw
+    }
+    .Mission__ValueBody {
+        padding: 0
+    }
+    .Mission__ValueItem:not(:last-of-type) {
+        margin-bottom: 5.201560468140442vw
+    }
+    .Mission__ValueHeadungUnit {
+        margin-bottom: 1.690507152145644vw
+    }
+    .Mission__ValueNum {
+        width: 4.161248374512354vw;
+        height: 3.185955786736021vw;
+        margin-right: 1.30039011703511vw;
+        margin-bottom: 0
+    }
+    .Mission__ValueHeading {
+        margin-bottom: 0;
+        padding-top: .4rem;
+        font-size: 2.600780234070221vw
+    }
+    .Mission__ValueText {
+        font-size: 1.560468140442133vw;
+        line-height: 1.8
+    }
+    .Mission__Recruit {
+        height: auto;
+        padding-top: 3.055555555555555vw;
+        padding-bottom: 4.583333333333333vw
+    }
+    .Mission__RecruitHeading,
+    .Mission__RecruitLowerHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Mission__RecruitHeading {
+        font-size: 2.080624187256177vw;
+        line-height: 1.5
+    }
+    .Mission__RecruitText {
+        max-width: 100%;
+        margin-bottom: 2.600780234070221vw;
+        font-size: 1.560468140442133vw;
+        line-height: 2
+    }
+    .Recruit__Container {
+        padding: 0 20px
+    }
+    .Recruit__Message {
+        padding-top: 3.055555555555555vw;
+        padding-bottom: 2.777777777777778vw
+    }
+    .Recruit__MessageBody {
+        padding: 0
+    }
+    .Recruit__MessageLowerHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Recruit__MessageHeading {
+        margin-bottom: 1.30039011703511vw;
+        font-size: 2.340702210663199vw;
+        line-height: 1.5
+    }
+    .Recruit__MessageText {
+        max-width: 100%;
+        padding-right: 1.30039011703511vw;
+        font-size: 1.560468140442133vw;
+        line-height: 1.8
+    }
+    .Recruit__MessageButton {
+        justify-content: center;
+        margin-top: 5.201560468140442vw
+    }
+    .Recruit__About {
+        padding-top: 5.721716514954486vw;
+        padding-bottom: 10.403120936280883vw
+    }
+    .Recruit__AboutLowerHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Recruit__AboutSlide {
+        width: 100%;
+        height: 24.83745123537061vw
+    }
+    .Recruit__OfficeSlider {
+        max-width: 100%;
+        margin-top: 2.600780234070221vw
+    }
+    .Recruit__OfficeSliderMain {
+        margin-bottom: 0
+    }
+    .Recruit__OfficeSliderMain .swiper-container {
+        overflow: hidden
+    }
+    .Recruit__OfficeSliderMain .swiper-container .swiper-slide {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    .Recruit__OfficeSliderThumb .swiperw-container .swiper-wrapper {
+        display: none
+    }
+    .Recruit__OfficeSliderMainImage {
+        width: 100%;
+        height: 23.667100130039014vw;
+        margin-bottom: 2.600780234070221vw
+    }
+    .Recruit__OfficeSliderMainBody {
+        position: static;
+        width: 100%;
+        padding: 0;
+        background-color: transparent
+    }
+    .Recruit__OfficeSliderMainHeadingBody {
+        text-align: center
+    }
+    .Recruit__OfficeSliderMainHeadingBody.-en {
+        margin-bottom: 3.901170351105332vw;
+        font-size: 1.820546163849155vw
+    }
+    .Recruit__OfficeSliderMainHeadingBody.-en:after {
+        bottom: -1.950585175552666vw;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        transform: translateX(-50%)
+    }
+    .Recruit__OfficeSliderMainHeadingBody.-ja {
+        font-size: 1.560468140442133vw
+    }
+    .Recruit__OfficeSliderMainText {
+        margin-top: 1.950585175552666vw;
+        font-size: 1.560468140442133vw;
+        line-height: 1.9
+    }
+    .Recruit__OfficeSliderThumbButton {
+        z-index: 10;
+        transform: none
+    }
+    .Recruit__OfficeSliderThumbButton .swiper-button-next {
+        right: 0;
+        width: 1.690507152145644vw;
+        height: 1.950585175552666vw;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA0CAMAAADhcastAAAAflBMVEVHcEzqsRvxtBjpsRzpsRzosR3psRz/rxHpsRz/3gDqsRztsBrpsRzqsRvtshjpsRztsxLpsRvpsRzqshrpsBzqtRXrsRzpsRzpsRzpsRzqsRzqsBzosRzpsB3psBzpsRzpsRzosBzpshzpsRvpshzpsR3psB3psR3psR3psR0AgtdJAAAAKXRSTlMAMRL03/h8B/4CSB3AgymfDY1aI64YP6bX0GJq6+/7cbfIUpRQl+blc6eHH0YAAAEbSURBVEjHtZfXEoJADEVVkKIgCNgVxIb3/3/QNo6FLdmNnvczs0Nyk9DxMr9jTV6evJ61PQb6ychSTte4Eu1CK3uJO+45tbEXDxvOMTeXu3gSbAemrw9neDFfGZZu2H+zsRkPjewYHwTF1ED2T/hisaS/PkOLdTyh2nXbRjnrmpbrgzojlS4R22gosek5EpsUGw9yooPm9b6rsLWx2UGJs1fGJlLbt9jI5VEAHYrYHKFHGht5uSixqUBDGJvQJdrC2AxAph0bjsx6NueD0UpVikvFaRJWe3KCwYmkZhhU6b/G0IQzADmjlzX0OeuGs+hYKzYmtf4fzoqCcdBMaTtBzJy2jYSsSK0vOVw3pA38+5M5Lxv7Y93L7P8SLrMEuDEV3zhPAAAAAElFTkSuQmCC) no-repeat 50%;
+        background-size: contain
+    }
+    .Recruit__OfficeSliderThumbButton .swiper-button-prev {
+        left: 0;
+        width: 1.690507152145644vw;
+        height: 1.950585175552666vw;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA0CAMAAADhcastAAAAilBMVEVHcEzpsRzpsRzosRzpsR3psRzpsBz/5wDusxbvtRfqsRzpsRz/tgDpsRzosRztsBjpsB3qshzosRzpsRzpsB3rsBvpsRv/zADqsxzusRrzshnosBzosRzpsRzpsR3psRzpsB3psBzpsB3psR3psRzqsRvpsRvqrxvqsBzqshzpsR3psRzpsRzpsR25YaKHAAAALXRSTlMA0X7g+fT9ARYPbFEHwacqn2PrjPBANwUkHQrJWrhzsIXM5pbbR5UweUnl2Vtqm0ScAAABEUlEQVRIx7WW5w6CQBCET6RawN5b7G3e//U0mljggL0b/f5PcoFvd0cpW4ZXxzYaOmt3ZBdNWi7QtUkG9SbudCLzaLSo4kHbODraeM8oKoHhe09zvBgYRSe1yzuK2CQ67vY+onBDebS/9PGF2I9Gu4IU64ZQpVUHGWai6CD2s1FMJerPptByKFfJOeujaInU1+OFEvVzOIrU11MdFqi/91BIPfe9uzlKaIrU1+MnEvVz2IvU19OLJOrnUBOprye9ew6xCzH9zNwYhHeKePY2UL/8YCa/yosUIclGEXoiUX8YDHIk2WVAriFyAbKrl1z65LlhDx15YsnjztYKstCQVYoscWx9JIsrWZlfZX2s7Lkeb32hyd57ioJWAAAAAElFTkSuQmCC) no-repeat 50%;
+        background-size: contain
+    }
+    .Recruit__Job {
+        padding-top: 5.201560468140442vw;
+        padding-bottom: 9.752925877763328vw
+    }
+    .Recruit__Job:after {
+        height: 33.68010403120936vw
+    }
+    .Recruit__JobLowerHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Recruit__JobText {
+        margin-bottom: 1.388888888888889vw;
+        font-size: 1.560468140442133vw;
+        text-align: left
+    }
+    .Recruit__JobBanner {
+        flex-direction: column
+    }
+    .Recruit__JobBannerLink {
+        width: 100%;
+        height: 21.716514954486346vw
+    }
+    .Recruit__JobBannerLink:not(:last-of-type) {
+        margin-bottom: 1.30039011703511vw
+    }
+    .Recruit__JobBannerText.-text {
+        font-size: 2.990897269180754vw
+    }
+    .Recruit__JobBannerText.-image {
+        width: 19.89596879063719vw;
+        height: 5.851755526657997vw
+    }
+    .Single__Container {
+        max-width: 100%;
+        padding: 2.600780234070221vw 20px 5.201560468140442vw
+    }
+    .Single__HeadCatsUnit {
+        margin-bottom: 1.950585175552666vw;
+        padding-left: 1.950585175552666vw
+    }
+    .Single__HeadCatsUnit:before {
+        width: 4px
+    }
+    .Single__Heading {
+        margin-bottom: 1.30039011703511vw;
+        font-size: 2.340702210663199vw
+    }
+    .Single__CategoryItem {
+        margin-right: 1.30039011703511vw;
+        margin-bottom: 2.600780234070221vw
+    }
+    .Single__CategoryLink {
+        font-size: 1.560468140442133vw
+    }
+    .Single__Staff {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Single__StaffList {
+        margin-left: 2.600780234070221vw
+    }
+    .Single__StaffItem {
+        margin-left: -2.600780234070221vw
+    }
+    .Single__StaffItem:not(:last-of-type) {
+        margin-right: 0
+    }
+    .Single__StaffJob,
+    .Single__StaffName {
+        display: none
+    }
+    .Single__StaffImage {
+        width: 5.201560468140442vw;
+        height: 5.201560468140442vw
+    }
+    .Single__Content {
+        margin-bottom: 5.201560468140442vw
+    }
+    .Single__Content h2,
+    .Single__Content h3,
+    .Single__Content h4,
+    .Single__Content h5,
+    .Single__Content h6 {
+        margin-bottom: 1.950585175552666vw;
+        padding-bottom: 1.950585175552666vw;
+        padding-left: 1.560468140442133vw;
+        font-size: 2.080624187256177vw
+    }
+    .Single__Content h2:before,
+    .Single__Content h3:before,
+    .Single__Content h4:before,
+    .Single__Content h5:before,
+    .Single__Content h6:before {
+        width: 4px;
+        height: calc(100% - 15px)
+    }
+    .Single__Content p {
+        margin-bottom: 5.201560468140442vw
+    }
+    .Single__Content ol li:before,
+    .Single__Content p {
+        font-size: 1.560468140442133vw
+    }
+    .Single__Content ul li:before {
+        width: .520156046814044vw;
+        height: .520156046814044vw
+    }
+    .Single__Content li {
+        margin-bottom: 2.600780234070221vw;
+        padding-left: 2.600780234070221vw;
+        font-size: 1.560468140442133vw
+    }
+    .Single__Content a {
+        margin-bottom: 5.201560468140442vw;
+        font-size: 1.560468140442133vw
+    }
+    .Single__Content img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3.250975292587777vw
+    }
+    .Single__Content blockquote {
+        margin-bottom: 3.250975292587777vw;
+        padding: 16px
+    }
+    .Single__Content blockquote p {
+        font-size: 1.560468140442133vw
+    }
+    .Single__Project {
+        padding: 5.201560468140442vw 2.600780234070221vw
+    }
+    .Single__ProjectLowerHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .PostProjectCollection {
+        padding: 0
+    }
+    .PostProjectCollection:after {
+        display: none
+    }
+    .StaffDetail__Container {
+        padding: 2.600780234070221vw 20px 7.802340702210664vw
+    }
+    .StaffDetail__OverSnsUnit {
+        width: 100%;
+        margin-bottom: 5.201560468140442vw
+    }
+    .StaffDetail__Overview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        padding: 3.901170351105332vw 2.600780234070221vw 2.600780234070221vw
+    }
+    .StaffDetail__OverviewCatch {
+        width: 100%
+    }
+    .StaffDetail__OverviewVisual {
+        flex-direction: row;
+        margin-right: 0;
+        margin-bottom: 3.901170351105332vw
+    }
+    .StaffDetail__NameJobUnit {
+        text-align: left
+    }
+    .StaffDetail__Name {
+        margin-top: 1.30039011703511vw;
+        font-size: 2.340702210663199vw
+    }
+    .StaffDetail__Job {
+        margin-top: 1.30039011703511vw;
+        font-size: 1.560468140442133vw
+    }
+    .StaffDetail__Image {
+        width: 10.403120936280883vw;
+        height: 10.403120936280883vw;
+        margin-right: 2.600780234070221vw;
+        border-width: 3px
+    }
+    .StaffDetail__Comment {
+        font-size: 1.560468140442133vw;
+        line-height: 1.9
+    }
+    .StaffDetail__Sns {
+        display: none
+    }
+    .StaffDetail__SnsLink {
+        width: 3.901170351105332vw;
+        height: 3.901170351105332vw
+    }
+    .StaffDetail__Medias {
+        padding: 0
+    }
+    .StaffDetail__MediasLowerHeading {
+        margin-bottom: 3.250975292587777vw
+    }
+    .StaffDetail__MediasCollection {
+        padding: 0
+    }
+    .StaffDetail__MediasCollection:after {
+        display: none
+    }
+    .Team__Container {
+        max-width: 100%;
+        padding: 5.201560468140442vw 20px 2.777777777777778vw
+    }
+    .Team__StaffCollection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+    .Thanks__Container {
+        padding: 40px 20px
+    }
+    .Thanks__Heading {
+        margin-bottom: 2.600780234070221vw;
+        padding-bottom: 0;
+        border-bottom: 0;
+        font-size: 1.950585175552666vw;
+        line-height: 1.8
+    }
+    .Thanks__Text {
+        margin-bottom: 5.201560468140442vw;
+        font-size: 1.560468140442133vw;
+        text-align: left
+    }
+    .Top__Heading .-en {
+        margin-bottom: 4.161248374512354vw;
+        font-size: 3.250975292587777vw;
+        letter-spacing: .01em
+    }
+    .Top__Heading .-en:after,
+    .Top__Heading .-en:before {
+        width: 100%;
+        min-width: 16.124837451235372vw;
+        max-width: 17.16514954486346vw
+    }
+    .Top__Heading .-en:before {
+        top: -2.600780234070221vw
+    }
+    .Top__Heading .-en:after {
+        bottom: -2.340702210663199vw
+    }
+    .Top__Heading .-ja {
+        font-size: 1.30039011703511vw
+    }
+    .Top__Mv {
+        align-items: flex-start
+    }
+    .MvBlur {
+        right: -20.806241872561767vw;
+        width: 75.71391417425227vw;
+        height: 66.35500650195058vw;
+        margin-top: -5.201560468140442vw;
+        animation: bgblursp 2.5s 2s forwards
+    }
+    .Top__MvCanvas {
+        top: auto;
+        right: -13.003901170351106vw;
+        bottom: 9.102730819245773vw;
+        width: 62.41872561768531vw;
+        transform: none
+    }
+    .Top__MvMeta {
+        width: 100%;
+        padding-top: 17.29518855656697vw;
+        padding-left: 0;
+        text-align: center
+    }
+    .Top__MvText {
+        justify-content: center;
+        margin-bottom: 1.30039011703511vw
+    }
+    .Top__MvText,
+    .Top__MvText span {
+        font-size: 1.950585175552666vw
+    }
+    .Top__MvHeading {
+        padding-left: 2.600780234070221vw;
+        font-size: 4.291287386215865vw;
+        line-height: 1.75
+    }
+    .Top__MvHeading .-listType:after {
+        top: -1.950585175552666vw;
+        width: 1.040312093628089vw;
+        height: 1.040312093628089vw
+    }
+    .Top__Mission {
+        margin-bottom: 6.944444444444445vw;
+        padding-top: 56.00000000000001vw;
+        padding-bottom: 11.11111111111111vw
+    }
+    .Top__MissionStrokeText {
+        display: none
+    }
+    .Top__MissionContainer {
+        padding: 0 20px
+    }
+    .Top__MissionHeading {
+        margin-bottom: 3.250975292587777vw
+    }
+    .Top__MissionPointList {
+        flex-direction: column;
+        padding-left: 0
+    }
+    .Top__MissionPointItem {
+        width: 100%;
+        padding: 3.250975292587777vw 3.901170351105332vw
+    }
+    .Top__MissionPointItem:not(:last-of-type) {
+        margin: 0 0 10px
+    }
+    .Top__MissionPointImage {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__MissionPointImage.-first {
+        width: 29.128738621586475vw;
+        height: 18.205461638491546vw;
+        margin-top: 0
+    }
+    .Top__MissionPointImage.-first:after {
+        top: -10.403120936280883vw;
+        width: 19.505851755526656vw;
+        height: 19.505851755526656vw
+    }
+    .Top__MissionPointImage.-second {
+        width: 19.375812743823147vw;
+        height: 20.676202860858258vw;
+        margin-top: 0
+    }
+    .Top__MissionPointImage.-second:after {
+        width: 19.505851755526656vw;
+        height: 19.505851755526656vw
+    }
+    .Top__MissionPointImage.-third {
+        width: 29.258777633289988vw;
+        height: 21.716514954486346vw;
+        margin-top: 0
+    }
+    .Top__MissionPointImage.-third:after {
+        width: 19.505851755526656vw;
+        height: 19.505851755526656vw
+    }
+    .Top__MissionPointHeading {
+        margin-bottom: 1.560468140442133vw
+    }
+    .Top__MissionPointHeadingStroke.-first {
+        width: 3.23407022106632vw
+    }
+    .Top__MissionPointHeadingStroke {
+        width: 4.006501950585176vw;
+        height: 2.730819245773732vw;
+        margin-right: 1.560468140442133vw
+    }
+    .Top__MissionPointText {
+        font-size: 1.625487646293888vw;
+        line-height: 1.7
+    }
+    .Top__Service {
+        margin-bottom: 15.604681404421328vw
+    }
+    .Top__ServiceContainer {
+        padding: 0 20px
+    }
+    .Top__ServiceMeta {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+    .Top__ServiceHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__ServiceText {
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 4.551365409622886vw;
+        font-size: 1.560468140442133vw;
+        line-height: 1.9;
+        text-align: justify
+    }
+    .Top__ServiceCollection {
+        max-width: 100%
+    }
+    .Top__ServiceCollection:after {
+        display: none
+    }
+    .Top__ServiceButton {
+        margin-top: 5.201560468140442vw
+    }
+    .Top__Recruit {
+        margin-bottom: 13.003901170351106vw;
+        padding-top: 13.003901170351106vw;
+        padding-bottom: 10.403120936280883vw
+    }
+    .Top__Recruit:before {
+        top: 5.201560468140442vw;
+        width: 16.38491547464239vw;
+        height: 102.73081924577374vw
+    }
+    .Top__Recruit:after {
+        width: 40.96228868660598vw
+    }
+    .Top__RecruitContainer {
+        padding: 0 20px
+    }
+    .Top__RecruitUnit {
+        flex-direction: column-reverse
+    }
+    .Top__RecruitMeta {
+        width: 100%
+    }
+    .Top__RecruitInnerMeta {
+        padding-left: 0
+    }
+    .Top__RecruitHeading,
+    .Top__RecruitImage {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__RecruitImage {
+        width: 100%;
+        height: 23.407022106631988vw;
+        margin-top: 0
+    }
+    .Top__RecruitInnerHeading {
+        margin-bottom: 1.30039011703511vw;
+        font-size: 1.690507152145644vw
+    }
+    .Top__RecruitText {
+        margin-bottom: 2.600780234070221vw;
+        font-size: 1.560468140442133vw
+    }
+    .Top__RecruitButtonUnit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    .Top__RecruitButton:not(:last-of-type) {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__RecruitStrokeText {
+        display: none
+    }
+    .Top__Media {
+        margin-bottom: 15.604681404421328vw
+    }
+    .Top__MediaHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__MediaContainer {
+        padding: 0 20px
+    }
+    .Top__MediaCollection {
+        padding-left: 0
+    }
+    .Top__MediaCollection:after {
+        display: none
+    }
+    .Top__MediaButton {
+        margin-top: 5.201560468140442vw
+    }
+    .Top__News {
+        margin-bottom: 15.604681404421328vw;
+        padding-top: 10.403120936280883vw;
+        padding-bottom: 5.201560468140442vw
+    }
+    .Top__News:before {
+        width: 16.38491547464239vw
+    }
+    .Top__News:after {
+        top: -5.201560468140442vw;
+        width: 40.96228868660598vw;
+        height: calc(100% + 21vw)
+    }
+    .Top__NewsContainer {
+        padding: 0 20px
+    }
+    .Top__NewsHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__NewsCollection {
+        padding: 0
+    }
+    .Top__NewsCard:not(:last-of-type) {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__NewsCardAnchor {
+        flex-direction: column;
+        padding-bottom: 2.600780234070221vw;
+        padding-left: 0
+    }
+    .Top__NewsCardDate {
+        margin-right: 0;
+        margin-bottom: .650195058517555vw
+    }
+    .Top__NewsCardDate,
+    .Top__NewsCardHeading {
+        font-size: 1.560468140442133vw
+    }
+    .Top__NewsStrokeText {
+        display: none
+    }
+    .Top__ContactContainer {
+        padding-right: 20px;
+        padding-bottom: 20.806241872561767vw;
+        padding-left: 20px
+    }
+    .Top__ContactHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__ContactForm {
+        margin-left: 0;
+        padding: 2.600780234070221vw 2.600780234070221vw 5.201560468140442vw
+    }
+    .Top__ContactForm .From__Item:not(:last-of-type) {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__ContactForm .Form__Heading {
+        margin-bottom: 1.30039011703511vw;
+        font-size: 1.560468140442133vw
+    }
+    .Top__ContactForm .mwFormElm {
+        padding: 1.30039011703511vw
+    }
+    .Top__ContactForm .mwFormElm:-ms-input-placeholder {
+        font-size: 1.560468140442133vw
+    }
+    .Top__ContactForm .mwFormElm::placeholder {
+        font-size: 1.560468140442133vw
+    }
+    .Top__ContactForm .mwFormTextArea {
+        height: 18.205461638491546vw;
+        max-height: 18.205461638491546vw;
+        padding: 12px;
+        line-height: 1.5
+    }
+    .Top__ContactForm .mwFormTextArea:-ms-input-placeholder {
+        font-size: 1.560468140442133vw
+    }
+    .Top__ContactForm .mwFormTextArea::placeholder {
+        font-size: 1.560468140442133vw
+    }
+    .Top__ContactFormError {
+        margin-top: .520156046814044vw;
+        font-size: 1.30039011703511vw
+    }
+    .Top__ContactAgrmtHeading {
+        margin-bottom: 1.950585175552666vw;
+        font-size: 1.560468140442133vw
+    }
+    .Top__ContactAgrmtHeading .-haifun {
+        margin-left: 1.040312093628089vw
+    }
+    .Top__ContactAgrmtUnit {
+        margin-bottom: 3.250975292587777vw;
+        padding-left: 3.250975292587777vw
+    }
+    .Top__ContactAgrmtBody {
+        height: 31.209362808842656vw;
+        max-height: 31.209362808842656vw;
+        margin-bottom: 3.250975292587777vw;
+        font-size: 1.560468140442133vw;
+        text-align: justify
+    }
+    .Top__ContactAgrmtBody p {
+        font-size: 1rem
+    }
+    .Top__ContactAgrmtLabel {
+        padding-left: .780234070221066vw;
+        font-size: 1.950585175552666vw
+    }
+    .Top__ContactAgrmtLabel:after {
+        top: .780234070221066vw;
+        left: -2.47074122236671vw;
+        width: 1.30039011703511vw;
+        height: .650195058517555vw
+    }
+    .Top__ContactAgrmtLabel:before {
+        left: -3.120936280884266vw;
+        width: 2.600780234070221vw;
+        height: 2.600780234070221vw
+    }
+    .Top__ContactSubmit .mwFormSend {
+        width: 100%;
+        height: 7.802340702210664vw;
+        font-size: 2.080624187256177vw
+    }
+    .Top__ContactFormText {
+        margin-bottom: 2.600780234070221vw;
+        font-size: 1.560468140442133vw
+    }
+    .Top__About {
+        margin-bottom: 15.604681404421328vw;
+        padding-top: 0;
+        padding-bottom: 0
+    }
+    .Top__About:before {
+        top: -7.152145643693109vw;
+        width: 16.38491547464239vw;
+        height: 107.80234070221067vw
+    }
+    .Top__About:after {
+        z-index: 1;
+        width: 100%;
+        height: 72.30169050715214vw
+    }
+    .Top__AboutContainer {
+        padding: 0 20px
+    }
+    .Top__AboutStrokeText {
+        display: none
+    }
+    .Top__AboutUnit {
+        flex-direction: column-reverse
+    }
+    .Top__AboutHeading {
+        margin-bottom: 2.600780234070221vw
+    }
+    .Top__AboutMeta {
+        margin-right: 0
+    }
+    .Top__AboutDef {
+        width: 100%;
+        padding-left: 0
+    }
+    .Top__AboutMap {
+        width: 100%;
+        height: 25.860858257477243vw;
+        margin-top: 0;
+        margin-bottom: 5.201560468140442vw;
+        box-shadow: 0 0 36px rgba(0, 0, 0, .1)
+    }
+    .Top__AboutDefItem {
+        padding-bottom: 1.560468140442133vw
+    }
+    .Top__AboutDefItem:not(:last-of-type) {
+        margin-bottom: 1.560468140442133vw
+    }
+    .Top__AboutDefBody,
+    .Top__AboutDefHeading {
+        font-size: 1.560468140442133vw
+    }
+    .Top__AboutDefBody {
+        width: 28.868660598179453vw;
+        padding-right: 2.600780234070221vw;
+        font-weight: 500
+    }
+}
+
+@media (max-height:569px) {
+    .Top__MvCanvas {
+        bottom: 20.333333333333336vw!important
+    }
+    .Top__MvMeta {
+        padding-top: 33.333333333333336vw!important
+    }
+}
+
+@media (max-width:415px) {
+    html {
+        font-size: 2.666666666666667vw
+    }
+    .-is-strip:not(:last-of-type) {
+        margin-bottom: 6.133333333333333vw
+    }
+    .BottomBanner__Link {
+        height: 50.13333333333333vw
+    }
+    .BottomBanner__LinkBody.-en {
+        margin-bottom: 3.466666666666666vw;
+        font-size: 5.333333333333334vw
+    }
+    .BottomBanner__LinkBody.-ja {
+        font-size: 3.2vw
+    }
+    .Breadcrumb {
+        padding-top: 2.666666666666667vw;
+        padding-right: 5.333333333333334vw;
+        padding-left: 5.333333333333334vw
+    }
+    .Breadcrumb>span {
+        font-size: 2.666666666666667vw
+    }
+    .Breadcrumb>span:not(:last-of-type):after {
+        margin-right: .533333333333333vw;
+        margin-left: .533333333333333vw;
+        font-size: 2.666666666666667vw
+    }
+    .Breadcrumb a {
+        font-size: 2.666666666666667vw
+    }
+    .Button.-large,
+    .Button.-medium {
+        width: 78.66666666666666vw;
+        height: 16vw;
+        font-size: 4.266666666666667vw
+    }
+    .GotoTop {
+        top: -10.133333333333333vw;
+        right: 5.333333333333334vw;
+        width: 6.933333333333333vw;
+        height: 6.933333333333333vw
+    }
+    .LowerHead {
+        height: 42.66666666666667vw;
+        padding-bottom: 5.333333333333334vw
+    }
+    .LowerHead__StrokeText.-media,
+    .LowerHead__StrokeText.-mission {
+        right: -21.333333333333336vw;
+        width: 107.208vw;
+        height: 19.2vw
+    }
+    .LowerHead__StrokeText.-staff {
+        right: 0;
+        width: 107.208vw;
+        height: 19.2vw
+    }
+    .LowerHead__StrokeText.-project,
+    .LowerHead__StrokeText.-recruit {
+        right: -21.333333333333336vw;
+        width: 107.208vw;
+        height: 19.2vw
+    }
+    .LowerHead__StrokeText.-contact,
+    .LowerHead__StrokeText.-pagenotfound {
+        right: -10.4vw;
+        width: 120.18666666666667vw;
+        height: 19.2vw
+    }
+    .LowerHead__Heading .-en {
+        margin-right: 1.333333333333333vw;
+        font-size: 6.666666666666667vw
+    }
+    .LowerHead__Heading .-ja {
+        font-size: 2.666666666666667vw
+    }
+    .LowerHeading__Body.-en,
+    .LowerHeading__Body.-tax {
+        font-size: 5.333333333333334vw
+    }
+    .LowerHeading__Body.-en {
+        margin-bottom: 4vw
+    }
+    .LowerHeading__Body.-en:after {
+        bottom: -1.950585175552666vw;
+        min-width: 18.666666666666668vw
+    }
+    .LowerHeading__Body.-ja {
+        font-size: 2.666666666666667vw
+    }
+    .MediaCard:not(:last-of-type) {
+        margin-bottom: 2.666666666666667vw
+    }
+    .MediaCard__Thumb {
+        height: 33.33333333333333vw
+    }
+    .MediaCard__Body {
+        padding: 4vw 5.333333333333334vw 2.666666666666667vw
+    }
+    .MediaCard__Heading {
+        margin-bottom: 1.333333333333333vw;
+        font-size: 3.2vw
+    }
+    .MediaCard__CardDesc {
+        margin-bottom: 3.2vw;
+        font-size: 3.2vw
+    }
+    .MediaCard__CategoryItem {
+        font-size: 3.2vw
+    }
+    .MediaCard__CategoryItem:not(:last-of-type) {
+        margin-right: 2.666666666666667vw
+    }
+    .MediaCard__Date {
+        margin-bottom: 2.133333333333333vw;
+        font-size: 2.666666666666667vw
+    }
+    .MediaCard__StaffItem {
+        width: 10.666666666666668vw;
+        height: 10.666666666666668vw
+    }
+    .MediaCard__StaffItem:not(:first-of-type) {
+        margin-left: -4vw
+    }
+    .MenuButton {
+        top: 5.333333333333334vw;
+        right: 5.333333333333334vw;
+        width: 6.666666666666667vw
+    }
+    .MenuButton__Line.-active:first-of-type,
+    .MenuButton__Line.-active:nth-of-type(3) {
+        top: 1.6vw
+    }
+    .MenuButton__Line:nth-of-type(2) {
+        top: 1.866666666666667vw
+    }
+    .MenuButton__Line:nth-of-type(3) {
+        top: 3.733333333333334vw
+    }
+    .Pagination__Link {
+        font-size: 4vw
+    }
+    .Pagination__PageItem:not(:last-of-type) {
+        margin-right: 5.333333333333334vw
+    }
+    .Pagination__Button {
+        width: 2.666666666666667vw;
+        height: 2.666666666666667vw
+    }
+    .Pagination__Item.-next {
+        right: -2.666666666666667vw
+    }
+    .Pagination__Item.-prev {
+        left: -8vw
+    }
+    .ProjectCard:not(:last-of-type) {
+        margin-bottom: 2.666666666666667vw
+    }
+    .ProjectCard__Thumb {
+        height: 33.33333333333333vw
+    }
+    .ProjectCard__Body {
+        padding: 4vw 5.333333333333334vw 2.666666666666667vw
+    }
+    .ProjectCard__Heading {
+        margin-bottom: 1.333333333333333vw;
+        font-size: 3.2vw
+    }
+    .ProjectCard__CardDesc {
+        margin-bottom: 3.2vw;
+        font-size: 3.2vw
+    }
+    .ProjectCard__CategoryItem {
+        font-size: 3.2vw
+    }
+    .ProjectCard__CategoryItem:not(:last-of-type) {
+        margin-right: 2.666666666666667vw
+    }
+    .StaffCard {
+        width: 42.93333333333334vw;
+        margin-bottom: 5.333333333333334vw
+    }
+    .StaffCard__Image {
+        width: 42.93333333333334vw;
+        height: 42.93333333333334vw
+    }
+    .StaffCard__Name {
+        margin-top: 2.666666666666667vw;
+        font-size: 3.733333333333334vw
+    }
+    .StaffCard__Job {
+        margin-top: 2.133333333333333vw;
+        font-size: 2.666666666666667vw
+    }
+    .PageNotFound__Heading {
+        margin-bottom: 5.333333333333334vw;
+        font-size: 4vw
+    }
+    .PageNotFound__Text {
+        margin-bottom: 10.666666666666668vw;
+        font-size: 3.2vw
+    }
+    .Footer {
+        padding: 5.333333333333334vw 8vw 4vw 5.333333333333334vw
+    }
+    .Footer__Head {
+        margin-bottom: 9.066666666666666vw
+    }
+    .Footer__Logo {
+        width: 24.8vw;
+        height: 6.933333333333333vw
+    }
+    .Footer__Sns {
+        top: 5.333333333333334vw;
+        right: 8vw
+    }
+    .Footer__SnsLabel {
+        margin-right: 2.133333333333333vw;
+        font-size: 2.666666666666667vw
+    }
+    .Footer__SnsItem:not(:last-of-type) {
+        margin-right: 1.066666666666667vw
+    }
+    .Footer__SnsLink {
+        width: 8vw;
+        height: 8vw
+    }
+    .Footer__Copyright {
+        font-size: 2.666666666666667vw
+    }
+    .Header {
+        height: 13.866666666666665vw;
+        padding-right: 5.333333333333334vw;
+        padding-left: 3.2vw
+    }
+    .Header__Logo {
+        width: 24.813333333333333vw;
+        height: 6.933333333333333vw
+    }
+    .Header__Item:not(:last-of-type) {
+        margin-bottom: 8vw
+    }
+    .Header__Link {
+        font-size: 5.333333333333334vw
+    }
+    .Medias__Conatiner {
+        padding: 10.666666666666668vw 5.333333333333334vw 16vw
+    }
+    .Mission__LowerHeading {
+        margin-top: 8.533333333333333vw
+    }
+    .Medias__Category {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Medias__CategoryText,
+    .Medias__CategoryText p {
+        margin-top: 3.2vw;
+        font-size: 3.2vw
+    }
+    .Medias__CategoryText.-all,
+    .Medias__CategoryText p.-all {
+        margin-top: 5.333333333333334vw;
+        font-size: 3.2vw
+    }
+    .Medias__CategoryUnit {
+        padding: 5.333333333333334vw 6.4vw 2.666666666666667vw
+    }
+    .Medias__CategoryAllWrap {
+        margin-bottom: 3.2vw
+    }
+    .Medias__CategoryItem {
+        margin-right: 4vw;
+        margin-bottom: 2.666666666666667vw
+    }
+    .Medias__CategoryAll,
+    .Medias__CategoryLink {
+        font-size: 3.2vw
+    }
+    .Medias__CategoryAll {
+        font-size: 4vw
+    }
+    .Medias__Collection {
+        margin-bottom: 10.666666666666668vw
+    }
+    .Mission__Mission1 {
+        padding-top: 11.733333333333333vw;
+        padding-bottom: 10.666666666666668vw
+    }
+    .Mission__Mission1LowerHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Mission__Mission1Heading {
+        margin-bottom: 2.666666666666667vw;
+        font-size: 4.8vw
+    }
+    .Mission__Mission1Text {
+        padding-right: 2.666666666666667vw;
+        font-size: 3.2vw
+    }
+    .Mission__Value {
+        padding-top: 11.733333333333333vw;
+        padding-bottom: 10.666666666666668vw
+    }
+    .Mission__ValueLowerHeading {
+        margin-bottom: 8.533333333333333vw
+    }
+    .Mission__ValueItem:not(:last-of-type) {
+        margin-bottom: 10.666666666666668vw
+    }
+    .Mission__ValueHeadungUnit {
+        margin-bottom: 3.466666666666666vw
+    }
+    .Mission__ValueNum {
+        width: 8.533333333333333vw;
+        height: 6.533333333333332vw;
+        margin-right: 2.666666666666667vw
+    }
+    .Mission__ValueHeading {
+        font-size: 5.333333333333334vw
+    }
+    .Mission__ValueText {
+        font-size: 3.2vw
+    }
+    .Mission__Recruit {
+        padding-top: 11.733333333333333vw;
+        padding-bottom: 17.599999999999998vw
+    }
+    .Mission__RecruitBg img {
+        object-position: -100vw
+    }
+    .Mission__RecruitHeading,
+    .Mission__RecruitLowerHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Mission__RecruitHeading {
+        font-size: 4.266666666666667vw
+    }
+    .Mission__RecruitText {
+        margin-bottom: 5.333333333333334vw;
+        font-size: 3.2vw
+    }
+    .Recruit__Message {
+        padding-top: 11.733333333333333vw;
+        padding-bottom: 10.666666666666668vw
+    }
+    .Recruit__MessageLowerHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Recruit__MessageHeading {
+        margin-bottom: 2.666666666666667vw;
+        font-size: 4.8vw
+    }
+    .Recruit__MessageText {
+        padding-right: 2.666666666666667vw;
+        font-size: 3.2vw
+    }
+    .Recruit__MessageButton {
+        margin-top: 10.666666666666668vw
+    }
+    .Recruit__About {
+        padding-top: 11.733333333333333vw;
+        padding-bottom: 21.333333333333336vw
+    }
+    .Recruit__AboutLowerHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Recruit__AboutSlide {
+        height: 50.93333333333333vw
+    }
+    .Recruit__OfficeSlider {
+        margin-top: 5.333333333333334vw
+    }
+    .Recruit__OfficeSliderMainImage {
+        height: 48.53333333333333vw;
+        margin-bottom: 5.333333333333334vw
+    }
+    .Recruit__OfficeSliderMainHeadingBody.-en {
+        margin-bottom: 8vw;
+        font-size: 3.733333333333334vw
+    }
+    .Recruit__OfficeSliderMainHeadingBody.-en:after {
+        bottom: -3.901170351105332vw;
+        width: 18.666666666666668vw
+    }
+    .Recruit__OfficeSliderMainHeadingBody.-ja {
+        font-size: 3.2vw
+    }
+    .Recruit__OfficeSliderMainText {
+        margin-top: 4vw;
+        font-size: 3.2vw
+    }
+    .Recruit__OfficeSliderThumbButton {
+        top: -26.666666666666668vw
+    }
+    .Recruit__OfficeSliderThumbButton .swiper-button-next,
+    .Recruit__OfficeSliderThumbButton .swiper-button-prev {
+        width: 3.466666666666666vw;
+        height: 4vw
+    }
+    .Recruit__Job {
+        padding-top: 10.666666666666668vw;
+        padding-bottom: 20vw
+    }
+    .Recruit__Job:after {
+        height: 69.06666666666666vw
+    }
+    .Recruit__JobLowerHeading,
+    .Recruit__JobText {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Recruit__JobText {
+        font-size: 3.2vw
+    }
+    .Recruit__JobBannerLink {
+        height: 44.53333333333334vw
+    }
+    .Recruit__JobBannerLink:not(:last-of-type) {
+        margin-bottom: 2.666666666666667vw
+    }
+    .Recruit__JobBannerText.-text {
+        font-size: 6.133333333333333vw
+    }
+    .Recruit__JobBannerText.-image {
+        width: 40.8vw;
+        height: 12vw
+    }
+    .Single__Container {
+        padding-top: 4vw;
+        padding-bottom: 10.666666666666668vw
+    }
+    .Single__HeadCatsUnit {
+        margin-bottom: 4vw;
+        padding-left: 4vw
+    }
+    .Single__Heading {
+        margin-bottom: 2.666666666666667vw;
+        font-size: 4.8vw
+    }
+    .Single__CategoryItem {
+        margin-right: 2.666666666666667vw;
+        margin-bottom: 5.333333333333334vw
+    }
+    .Single__CategoryLink {
+        font-size: 3.2vw
+    }
+    .Single__Staff {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Single__StaffList {
+        margin-left: 4vw
+    }
+    .Single__StaffItem {
+        margin-left: -4vw
+    }
+    .Single__StaffImage {
+        width: 10.666666666666668vw;
+        height: 10.666666666666668vw
+    }
+    .Single__Content {
+        margin-bottom: 10.666666666666668vw
+    }
+    .Single__Content h2,
+    .Single__Content h3,
+    .Single__Content h4,
+    .Single__Content h5,
+    .Single__Content h6 {
+        margin-bottom: 4vw;
+        padding-bottom: 4vw;
+        padding-left: 3.2vw;
+        font-size: 4.266666666666667vw
+    }
+    .Single__Content p {
+        margin-bottom: 10.666666666666668vw;
+        font-size: 3.2vw
+    }
+    .Single__Content ol li:before {
+        font-size: 3.2vw
+    }
+    .Single__Content ul li:before {
+        width: 1.066666666666667vw;
+        height: 1.066666666666667vw
+    }
+    .Single__Content li {
+        margin-bottom: 5.333333333333334vw;
+        padding-left: 5.333333333333334vw;
+        font-size: 3.2vw
+    }
+    .Single__Content a {
+        margin-bottom: 10.666666666666668vw;
+        font-size: 3.2vw
+    }
+    .Single__Content blockquote,
+    .Single__Content img {
+        margin-bottom: 6.666666666666667vw
+    }
+    .Single__Content blockquote p {
+        font-size: 3.2vw
+    }
+    .Single__Project {
+        padding: 10.666666666666668vw 5.333333333333334vw
+    }
+    .Single__ProjectLowerHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .StaffDetail__Container {
+        padding-top: 4vw;
+        padding-bottom: 16vw
+    }
+    .StaffDetail__OverSnsUnit {
+        margin-bottom: 10.666666666666668vw
+    }
+    .StaffDetail__Overview {
+        padding: 8vw 5.333333333333334vw 5.333333333333334vw
+    }
+    .StaffDetail__OverviewVisual {
+        margin-bottom: 6.666666666666667vw
+    }
+    .StaffDetail__Name {
+        margin-top: 2.666666666666667vw;
+        font-size: 4.8vw
+    }
+    .StaffDetail__Job {
+        margin-top: 2.666666666666667vw;
+        font-size: 3.2vw
+    }
+    .StaffDetail__Image {
+        width: 21.333333333333336vw;
+        height: 21.333333333333336vw;
+        margin-right: 5.333333333333334vw
+    }
+    .StaffDetail__Comment {
+        font-size: 3.2vw
+    }
+    .StaffDetail__SnsLink {
+        width: 8vw;
+        height: 8vw
+    }
+    .StaffDetail__MediasLowerHeading {
+        margin-bottom: 6.666666666666667vw
+    }
+    .Team__Container {
+        padding-top: 8vw;
+        padding-bottom: 10.666666666666668vw
+    }
+    .Thanks__Heading {
+        margin-bottom: 5.333333333333334vw;
+        font-size: 4vw
+    }
+    .Thanks__Text {
+        margin-bottom: 10.666666666666668vw;
+        font-size: 3.2vw
+    }
+    .Top__Heading .-en {
+        margin-bottom: 8.533333333333333vw;
+        font-size: 6.666666666666667vw
+    }
+    .Top__Heading .-en:after,
+    .Top__Heading .-en:before {
+        min-width: 33.06666666666666vw;
+        max-width: 34.13333333333333vw
+    }
+    .Top__Heading .-en:before {
+        top: -5.333333333333334vw
+    }
+    .Top__Heading .-en:after {
+        bottom: -4.8vw
+    }
+    .Top__Heading .-ja {
+        font-size: 2.666666666666667vw
+    }
+    .MvBlur {
+        right: -42.66666666666667vw;
+        width: 155.264vw;
+        height: 136.072vw;
+        margin-top: -10.666666666666668vw
+    }
+    .Top__MvCanvas {
+        right: -26.666666666666668vw;
+        bottom: 18.666666666666668vw;
+        width: 128vw
+    }
+    .Top__MvMeta {
+        padding-top: 35.46666666666667vw
+    }
+    .Top__MvText {
+        margin-bottom: 3.733333333333334vw
+    }
+    .Top__MvText,
+    .Top__MvText span {
+        font-size: 4vw
+    }
+    .Top__MvHeading {
+        padding-left: 5.333333333333334vw;
+        font-size: 8.799999999999999vw
+    }
+    .Top__MvHeading .-listType:after {
+        top: -4vw;
+        width: 2.133333333333333vw;
+        height: 2.133333333333333vw
+    }
+    .Top__Mission {
+        margin-bottom: 26.666666666666668vw;
+        padding-top: 16vw;
+        padding-bottom: 21.333333333333336vw
+    }
+    .Top__Mission:before {
+        width: 84vw;
+        background-color: #fff
+    }
+    .Top__Mission:after {
+        z-index: -1;
+        top: 16vw;
+        width: 33.6vw;
+        height: 100%;
+        background-color: #e6e6e6
+    }
+    .Top__MissionHeading {
+        margin-bottom: 6.666666666666667vw
+    }
+    .Top__MissionPointItem {
+        padding: 6.666666666666667vw 8vw
+    }
+    .Top__MissionPointImage {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Top__MissionPointImage.-first {
+        width: 59.73333333333334vw;
+        height: 37.333333333333336vw
+    }
+    .Top__MissionPointImage.-first:after {
+        top: -5.333333333333334vw;
+        width: 40vw;
+        height: 40vw
+    }
+    .Top__MissionPointImage.-second {
+        width: 39.733333333333334vw;
+        height: 42.4vw
+    }
+    .Top__MissionPointImage.-second:after {
+        width: 40vw;
+        height: 40vw
+    }
+    .Top__MissionPointImage.-third {
+        width: 60vw;
+        height: 44.53333333333334vw
+    }
+    .Top__MissionPointImage.-third:after {
+        width: 40vw;
+        height: 40vw
+    }
+    .Top__MissionPointHeading {
+        margin-bottom: 3.2vw
+    }
+    .Top__MissionPointHeadingStroke.-first {
+        width: 6.632000000000001vw
+    }
+    .Top__MissionPointHeadingStroke {
+        width: 8.216vw;
+        height: 5.600000000000001vw;
+        margin-right: 3.2vw
+    }
+    .Top__MissionPointHeadingBody {
+        padding-bottom: .8vw;
+        border-width: .533333333333333vw;
+        font-size: 4vw
+    }
+    .Top__MissionPointText {
+        font-size: 3.333333333333333vw
+    }
+    .Top__Service {
+        margin-bottom: 32vw
+    }
+    .Top__ServiceHeading {
+        margin-bottom: 6.133333333333333vw
+    }
+    .Top__ServiceText {
+        margin-bottom: 9.333333333333334vw;
+        font-size: 3.2vw
+    }
+    .Top__ServiceButton {
+        margin-top: 10.666666666666668vw
+    }
+    .Top__Recruit {
+        margin-bottom: 26.666666666666668vw;
+        padding-top: 29.333333333333332vw;
+        padding-bottom: 21.333333333333336vw
+    }
+    .Top__Recruit:before {
+        top: 12.8vw;
+        width: 33.6vw;
+        height: 213.33333333333334vw
+    }
+    .Top__Recruit:after {
+        width: 84vw
+    }
+    .Top__RecruitHeading {
+        margin-bottom: 6.666666666666667vw
+    }
+    .Top__RecruitImage {
+        height: 48vw;
+        margin-bottom: 5.333333333333334vw
+    }
+    .Top__RecruitInnerHeading {
+        margin-bottom: 2.666666666666667vw;
+        font-size: 3.466666666666666vw
+    }
+    .Top__RecruitText {
+        margin-bottom: 5.333333333333334vw;
+        font-size: 3.2vw
+    }
+    .Top__RecruitButton:not(:last-of-type) {
+        margin-bottom: 2.666666666666667vw
+    }
+    .Top__Media {
+        margin-bottom: 32vw
+    }
+    .Top__MediaHeading {
+        margin-bottom: 6.666666666666667vw
+    }
+    .Top__MediaButton {
+        margin-top: 10.666666666666668vw
+    }
+    .Top__News {
+        margin-bottom: 37.333333333333336vw;
+        padding-top: 16vw;
+        padding-bottom: 10.666666666666668vw
+    }
+    .Top__News:before {
+        width: 33.6vw
+    }
+    .Top__News:after {
+        top: -12vw;
+        width: 84vw;
+        height: calc(100% + 24vw)
+    }
+    .Top__NewsHeading {
+        margin-bottom: 6.666666666666667vw
+    }
+    .Top__NewsCard:not(:last-of-type) {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Top__NewsCardAnchor {
+        padding-bottom: 5.333333333333334vw
+    }
+    .Top__NewsCardDate {
+        margin-bottom: 1.333333333333333vw;
+        font-size: 3.2vw
+    }
+    .Top__NewsCardHeading {
+        font-size: 3.2vw
+    }
+    .Top__ContactContainer {
+        padding-bottom: 42.66666666666667vw
+    }
+    .Top__ContactHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Top__ContactForm {
+        margin-left: 0;
+        padding: 5.333333333333334vw 5.333333333333334vw 10.666666666666668vw
+    }
+    .Top__ContactForm .From__Item:not(:last-of-type) {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Top__ContactForm .Form__Heading {
+        margin-bottom: 2.666666666666667vw;
+        font-size: 3.2vw
+    }
+    .Top__ContactForm .mwFormElm {
+        padding: 2.133333333333333vw 2.666666666666667vw 3.2vw
+    }
+    .Top__ContactForm .mwFormElm:-ms-input-placeholder {
+        font-size: 3.2vw
+    }
+    .Top__ContactForm .mwFormElm::placeholder {
+        font-size: 3.2vw
+    }
+    .Top__ContactForm .mwFormTextArea {
+        height: 37.333333333333336vw;
+        max-height: 37.333333333333336vw
+    }
+    .Top__ContactForm .mwFormTextArea:-ms-input-placeholder {
+        font-size: 3.2vw
+    }
+    .Top__ContactForm .mwFormTextArea::placeholder {
+        font-size: 3.2vw
+    }
+    .Top__ContactFormError {
+        margin-top: 1.066666666666667vw;
+        font-size: 2.666666666666667vw
+    }
+    .Top__ContactAgrmtHeading {
+        margin-bottom: 2.933333333333333vw;
+        font-size: 3.2vw
+    }
+    .Top__ContactAgrmtHeading .-haifun {
+        margin-left: 2.133333333333333vw
+    }
+    .Top__ContactAgrmtUnit {
+        margin-bottom: 6.666666666666667vw;
+        padding-left: 6.666666666666667vw
+    }
+    .Top__ContactAgrmtBody {
+        height: 64vw;
+        max-height: 64vw;
+        margin-bottom: 6.666666666666667vw;
+        font-size: 3.2vw
+    }
+    .Top__ContactAgrmtLabel {
+        padding-left: 1.6vw;
+        font-size: 3.2vw
+    }
+    .Top__ContactAgrmtLabel:after {
+        top: 1.6vw;
+        left: -5.066666666666666vw;
+        width: 2.666666666666667vw;
+        height: 1.333333333333333vw
+    }
+    .Top__ContactAgrmtLabel:before {
+        left: -6.4vw;
+        width: 5.333333333333334vw;
+        height: 5.333333333333334vw
+    }
+    .Top__ContactSubmit .mwFormSend {
+        height: 16vw;
+        font-size: 4.266666666666667vw
+    }
+    .Top__ContactFormText {
+        margin-bottom: 5.333333333333334vw;
+        font-size: 3.2vw
+    }
+    .Top__About {
+        margin-bottom: 34.66666666666667vw
+    }
+    .Top__About:before {
+        top: -16vw;
+        width: 33.6vw;
+        height: 224.00000000000003vw
+    }
+    .Top__About:after {
+        top: 48vw;
+        height: 148.26666666666665vw
+    }
+    .Top__AboutHeading {
+        margin-bottom: 5.333333333333334vw
+    }
+    .Top__AboutMap {
+        height: 53.032000000000004vw;
+        margin-bottom: 10.666666666666668vw
+    }
+    .Top__AboutDefItem {
+        padding-bottom: 3.2vw
+    }
+    .Top__AboutDefItem:not(:last-of-type) {
+        margin-bottom: 3.2vw
+    }
+    .Top__AboutDefHeading {
+        font-size: 3.2vw
+    }
+    .Top__AboutDefBody {
+        width: 59.199999999999996vw;
+        padding-right: 5.333333333333334vw;
+        font-size: 3.2vw
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* top_video */
+
+.top_movie {
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 999;
+    margin-top: 60px;
+}
+
+.top_video {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Top__Mission */
+
+.mission_sec {
+    display: block;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mission_title {
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-decoration: underline solid 3px;
+    margin-bottom: 10px;
+}
+
+.mission_text {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.mission_content {
+    font-size: 2.5vw;
+    line-height: 5px;
+    margin: 2em 0 3em 5em;
+}
+
+.about_profile {
+    display: block;
+    width: 100%;
+    margin-top: 4em;
+    box-sizing: border-box;
+}
+
+.about_title {
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-decoration: underline solid 3px;
+    margin-bottom: 10px;
+}
+
+.about_text {
+    font-size: 1.5vw;
+}
+
+.about_content {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.about_textcontent {
+    margin-left: 7em;
+}

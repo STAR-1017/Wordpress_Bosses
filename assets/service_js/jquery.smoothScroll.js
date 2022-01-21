@@ -1,0 +1,1 @@
+$(function(){$('a[href^="#"]').click(function(){var t=$("header").height();if(!$(this).hasClass("noSmooth")){var h=$(this).attr("href"),o=$("#"==h||""==h?"html":h);$(window).width();if($(this).hasClass("pagetop"))var a=o.offset().top;else a=o.offset().top-t;$("html, body").animate({scrollTop:a},500)}})});
